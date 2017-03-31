@@ -1,7 +1,7 @@
 dev-libs/wiringpi 9999: A 'wiring' like library for the Raspberry Pi (inkluding GPIO tool)
-dev-python/pysoundfile 0.8.0: PySoundFile is an audio library based on libsndfile, CFFI, and NumPy
+dev-python/pysoundfile 0.8.0 0.9.0: PySoundFile is an audio library based on libsndfile, CFFI, and NumPy
 games-fps/urbanterror 9999: Hollywood tactical shooter based on the ioquake3 engine
 games-fps/urbanterror-data 4.3.2: Data files for UrbanTerror
-media-fonts/firacode 1.200: Monospaced font with programming ligatures
+media-fonts/firacode 1.200 1.204: Monospaced font with programming ligatures
 media-fonts/sans-bullshit-sans 0.1: A media-fonts/droid based font with buzzword censorship
 net-misc/fb-client 2.0.1 2.0.2 2.0.3 9999: Client for paste.xinu.at
