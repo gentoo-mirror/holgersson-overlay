@@ -4,4 +4,9 @@
 
 dev-libs/wiringpi:examples-src - Inclusion of examples in examples/, stored in /usr/share/doc/${P}/
 dev-libs/wiringpi:gpio - Build also gpio binary
+games-fps/urbanterror:altgamma - Clearskies - X11-based gamma for Linux
+games-fps/urbanterror:dedicated - Build only server target - dedicated to hosting a server
+games-fps/urbanterror:mumble - Use Mumble for in-game VoIP (currently not supported by upstream)
+games-fps/urbanterror:opus - Use opus as sound codec
+games-fps/urbanterror:server - Build server target
 net-misc/fb-client:clipboard - Support writing to X clipboard via x11-misc/xclip
