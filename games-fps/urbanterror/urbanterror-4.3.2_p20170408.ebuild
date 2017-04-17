@@ -2,16 +2,17 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-inherit flag-o-matic git-r3
+inherit flag-o-matic
 
 DESCRIPTION="Hollywood tactical shooter based on the ioquake3 engine"
 HOMEPAGE="http://urbanterror.info"
-EGIT_REPO_URI="https://github.com/holgersson32644/ioq3.git"
-EGIT_BRANCH="urt"
+SRC_URI="https://github.com/holgersson32644/ioq3/archive/${PV}.tar.gz -> ${P}.tar.gz"
+
+S="${WORKDIR}/ioq3-${PV}"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~x86 ~amd64"
 IUSE="+altgamma +client +curl debug mumble openal +opus server +sdl voip vorbis"
 REQUIRED_USE=" || ( client server )"
 
