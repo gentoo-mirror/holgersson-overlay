@@ -1,0 +1,15 @@
+DEFINED_PHASES=install
+DEPEND=media-libs/freetype:2 media-libs/openal media-libs/libvorbis virtual/opengl virtual/glu x11-libs/libX11
+DESCRIPTION=Play as a single-celled organism absorbing others
+EAPI=6
+HOMEPAGE=http://www.hemispheregames.com/osmos/
+KEYWORDS=~amd64 ~x86
+LICENSE=Hemisphere_Games-EULA
+PROPERTIES=interactive
+RDEPEND=media-libs/freetype:2 media-libs/openal media-libs/libvorbis virtual/opengl virtual/glu x11-libs/libX11
+RESTRICT=fetch strip
+SLOT=0
+SRC_URI=Osmos_1.6.1.tar.gz
+_eclass_exported_funcs=src_install:-
+_eclasses_=epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	0236be304ee52e7f179ed2f337075515	toolchain-funcs	6eb35f81556258a4bc9182ad3dfd58ee
+_md5_=b2922cb10a7223719c1b2911c5daf83c
