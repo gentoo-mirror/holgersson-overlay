@@ -3,3 +3,4 @@ games-puzzle/osmos 1.6.1-r2: Play as a single-celled organism absorbing others
 media-fonts/firacode 1.200 1.204: Monospaced font with programming ligatures
 media-fonts/sans-bullshit-sans 0.1: A media-fonts/droid based font with buzzword censorship
 net-misc/fb-client 2.0.1 2.0.2 2.0.3 9999: Client for paste.xinu.at
+sys-apps/pacman 5.0.2: Archlinux's binary package manager
