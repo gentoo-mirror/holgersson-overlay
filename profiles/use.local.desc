@@ -3,4 +3,3 @@
 # * generated automatically using pmaint *
 
 net-misc/fb-client:clipboard - Support writing to X clipboard via x11-misc/xclip
-sys-apps/pacman:gpg - Support verifying packages signed with GPG using app-crypt/gpgme
