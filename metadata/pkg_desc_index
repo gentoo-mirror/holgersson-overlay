@@ -1,4 +1,4 @@
-dev-python/pysoundfile 0.8.0 0.9.0: PySoundFile is an audio library based on libsndfile, CFFI, and NumPy
+dev-python/pysoundfile 0.10.0: PySoundFile is an audio library based on libsndfile, CFFI, and NumPy
 games-puzzle/osmos 1.6.1-r2: Play as a single-celled organism absorbing others
 media-fonts/firacode 1.200 1.204: Monospaced font with programming ligatures
 media-fonts/sans-bullshit-sans 0.1: A media-fonts/droid based font with buzzword censorship
