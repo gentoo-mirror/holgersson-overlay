@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=dev-libs/libmcp23s17
+DESCRIPTION=C library for controlling (RaspberryPi) PiFace Digital
+EAPI=6
+HOMEPAGE=https://github.com/piface/libpifacedigital
+KEYWORDS=~arm
+LICENSE=GPL-3
+RDEPEND=dev-libs/libmcp23s17
+SLOT=0
+SRC_URI=https://github.com/piface/libpifacedigital/archive/v0.3.0.tar.gz -> libpifacedigital-0.3.0.tar.gz
+_eclasses_=multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
+_md5_=fa93be56c228556d9265cb8c60b26598
