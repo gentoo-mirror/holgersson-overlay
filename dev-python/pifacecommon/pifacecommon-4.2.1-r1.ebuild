@@ -22,5 +22,7 @@ LICENSE="GPL-3"
 SLOT="0"
 IUSE=""
 
+PATCHES=( "${FILESDIR}"/${PN}-4.2.1-fix_speed.patch )
+
 DEPEND="dev-libs/libpifacedigital"
 RDEPEND="${DEPEND}"

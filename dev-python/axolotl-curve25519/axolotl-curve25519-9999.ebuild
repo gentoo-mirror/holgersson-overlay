@@ -11,14 +11,13 @@ HOMEPAGE="https://github.com/gsahbi/python-axolotl-curve25519"
 
 if [[ "${PV}" == *9999 ]]
 then
-		inherit git-r3
-		EGIT_REPO_URI="https://github.com/gsahbi/${PN}.git"
-		KEYWORDS=""
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/gsahbi/${PN}.git"
+	KEYWORDS=""
 else
-		COMMIT_ID="2080fe76fa163ce76408bb8a95e17ac1cd5c3f7c"
-		SRC_URI="https://github.com/gsahbi/python-${PN}/archive/${COMMIT_ID}.tar.gz -> ${P}.tar.gz"
-		S="${WORKDIR}/python-${PN}-${COMMIT_ID}"
-		KEYWORDS="~x86 ~amd64"
+	SRC_URI="https://github.com/tgalal/python-${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+	KEYWORDS="~amd64 ~x86"
+	S="${WORKDIR}"/python-${P}
 fi
 
 LICENSE="GPL-3"

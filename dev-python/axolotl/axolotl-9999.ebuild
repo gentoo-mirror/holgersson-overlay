@@ -15,7 +15,7 @@ then
 	EGIT_REPO_URI="https://github.com/tgalal/python-${PN}.git"
 	KEYWORDS=""
 else
-	SRC_URI="https://github.com/tgalal/python-${PN}/archive/${PV}.tar.gz -> ${PVR}.tar.gz"
+	SRC_URI="https://github.com/tgalal/python-${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="~amd64 ~x86"
 	S="${WORKDIR}/python-${P}"
 fi
@@ -24,9 +24,8 @@ LICENSE="GPL-3"
 SLOT="0"
 IUSE=""
 
-# let's just use the latest stable protobuf-3
-RDEPEND=">=dev-libs/protobuf-3.1.0
-	dev-python/pycryptodome[${PYTHON_USEDEP}]
+RDEPEND="dev-libs/protobuf
+	dev-python/cryptography[${PYTHON_USEDEP}]
 	dev-python/axolotl-curve25519[${PYTHON_USEDEP}]"
 DEPEND="${RDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]"
