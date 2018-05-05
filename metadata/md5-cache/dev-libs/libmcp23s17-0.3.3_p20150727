@@ -6,5 +6,5 @@ KEYWORDS=~arm
 LICENSE=GPL-3
 SLOT=0
 SRC_URI=https://github.com/piface/libmcp23s17/archive/f65a5e2fb2f705eb0a108e1f888da7dea3638c4b.tar.gz -> libmcp23s17-0.3.3_p20150727.tar.gz
-_eclasses_=multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
+_eclasses_=multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	fa02994d0beba88681127d93da4411ec
 _md5_=62851895322e1311c5872ce4461fcd53
