@@ -1,4 +1,4 @@
-DEFINED_PHASES=install
+DEFINED_PHASES=install nofetch
 DEPEND=media-libs/freetype:2 media-libs/openal media-libs/libvorbis virtual/opengl virtual/glu x11-libs/libX11
 DESCRIPTION=Play as a single-celled organism absorbing others
 EAPI=6
