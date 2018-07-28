@@ -1,11 +1,12 @@
-BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=unpack
+DEFINED_PHASES=-
 DESCRIPTION=Client for paste.xinu.at
 EAPI=7
 HOMEPAGE=https://paste.xinu.at
 IUSE=+clipboard python_targets_python3_5 python_targets_python3_6
+KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
 RDEPEND=dev-python/pyxdg[python_targets_python3_5(-)?,python_targets_python3_6(-)?,-python_single_target_python3_5(-),-python_single_target_python3_6(-)] dev-python/pycurl[python_targets_python3_5(-)?,python_targets_python3_6(-)?,-python_single_target_python3_5(-),-python_single_target_python3_6(-)] clipboard? ( x11-misc/xclip )
 SLOT=0
-_eclasses_=eutils	b43d08fe0771faf2f5e7be19c2789d33	git-r3	8f6de46b0aa318aea0e8cac62ece098b	multibuild	35719a9cd25ec71ee49c966f6868454c	multilib	97f470f374f2e94ccab04a2fb21d811e	python-r1	0b5829eb6369d7af3a834b6eed7b7107	python-utils-r1	7db901256449fef43c3aaa4d486c1c63	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607
-_md5_=1334a84534030ab7f1c82efe3d7669d8
+SRC_URI=https://paste.xinu.at/data/client/fb-2.0.3.tar.gz -> fb-client-2.0.3-r2.tar.gz
+_eclasses_=eutils	b43d08fe0771faf2f5e7be19c2789d33	multibuild	35719a9cd25ec71ee49c966f6868454c	multilib	97f470f374f2e94ccab04a2fb21d811e	python-r1	0b5829eb6369d7af3a834b6eed7b7107	python-utils-r1	7db901256449fef43c3aaa4d486c1c63	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607
+_md5_=1d53c7c0e6895b5bf4652636b232f007
