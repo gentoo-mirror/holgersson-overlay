@@ -1,7 +1,5 @@
----
-Title: Readme for holgersson-overlay
-Author: Nils Freydank <holgersson [ascii-symbol-64] posteo [ascii-symbol-46] de>
----
+.. Title: Readme for holgersson-overlay
+.. Author: Nils Freydank <holgersson [ascii-symbol-64] posteo [ascii-symbol-46] de>
 
 Main
 ====
@@ -10,9 +8,38 @@ This is my private and unofficial overlay_ for Gentoo/Linux.
 There will be different ebuilds from different sources, hopefully only temporary
 before submitting to the `main Gentoo bugtracker`_ resp. to the `main portage tree`_.
 
-Setup & synchronisation
-=======================
-Just run layman from `app-portage/layman` with needed privileges, e.g. root:
+Setup and synchronisation
+=========================
+
+There are several possible ways of adding this overlay:
+
+Adding the overlay manually
+---------------------------
+
+You can clone the repository and create `/etc/portage/repos.conf/holgersson-overlay.conf`
+with the following contents:
+
+.. ini
+
+   [holgersson-overlay]
+   priority = 50
+   location = /path/to/local/holgersson-overlay
+   sync-type = git
+   sync-uri = https://github.com/gentoo-mirror/holgersson-overlay.git
+
+Using eselect-repository
+------------------------
+
+Run eselect repository:
+
+.. sh
+   $ eselect repository enable holgersson-overlay
+
+
+Using layman
+------------
+
+Run layman from `app-portage/layman`:
 
 .. sh
    $ layman -a holgersson-overlay
@@ -23,7 +50,7 @@ and optional for global updates:
    $ layman -S
    $ emerge --sync
 
-You might set `USE="sync-plugin-portage"` for layman, too.
+You might want to set `USE="sync-plugin-portage"` for layman, too.
 
 Maintainer
 ==========
@@ -36,8 +63,8 @@ critics and chorus of praise are all welcome!
 
 GPG key ID: **0x00EF D31F 1B60 D5DB ADB8 31C1 C0EC E696 0E54 475B**
 
-License
-=======
+License and copying
+===================
 
 - The contents of this document are licensed under the `CC-BY-SA-3.0 license`. The ebuilds are licensed under the `GNU General Public License v2` for compability with the main Gentoo/portage tree.
 - Source files might have different licenses; these should be outlined in the ebuilds themselves.
