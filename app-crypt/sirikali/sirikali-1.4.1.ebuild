@@ -7,7 +7,7 @@ inherit eutils cmake-utils
 
 S="${WORKDIR}/SiriKali-${PV}"
 
-DESCRIPTION="A Qt/C++ GUI front end to ecryptfs,cryfs,gocryptfs,securefs,sshfs and encfs"
+DESCRIPTION="A Qt/C++ GUI front end to some encrypted filesystems and sshfs"
 HOMEPAGE="https://github.com/mhogomchungu/sirikali"
 SRC_URI="https://github.com/mhogomchungu/${PN}/releases/download/${PV}/${P}.tar.xz"
 
@@ -26,7 +26,8 @@ RDEPEND="
 DEPEND="${RDEPEND}
 	dev-libs/libgcrypt:0=
 	dev-libs/libpwquality
-	gnome-keyring? ( app-crypt/libsecret )"
+	gnome-keyring? ( app-crypt/libsecret )
+	virtual/pkgconfig"
 
 src_configure() {
 	local MY_S_FLAG=false
