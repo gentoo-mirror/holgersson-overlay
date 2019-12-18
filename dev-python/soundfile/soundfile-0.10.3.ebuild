@@ -13,8 +13,9 @@ MY_P="${MY_PN}-${PV}"
 
 DESCRIPTION="SoundFile is an audio library based on libsndfile, CFFI, and NumPy"
 HOMEPAGE="https://github.com/bastibe/SoundFile"
-SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_P}.tar.gz -> ${P}.tar.gz"
-#SRC_URI="https://git.holgersson.xyz/SoundFile/snapshot/SoundFile-0.10.1.tar.gz -> ${P}.tar.gz"
+# Upstream messes around whith uploading files. Cool.
+# SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_P}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/bastibe/SoundFile/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="PySoundFile-BSD-3"
 SLOT="0"
