@@ -8,6 +8,5 @@ dev-python/soundfile 0.10.3: SoundFile is an audio library based on libsndfile, 
 dev-vcs/git-lfs 2.9.2: command line extension and specification for managing large files with Git
 games-puzzle/osmos 1.6.1-r2: Play as a single-celled organism absorbing others
 media-fonts/sans-bullshit-sans 0.1: A media-fonts/droid based font with buzzword censorship
-net-firewall/firewalld 0.8.0: A firewall daemon with D-BUS interface providing a dynamic firewall
-net-misc/fb-client 2.0.4 9999: Client for paste.xinu.at
+net-misc/fb-client 2.0.4-r1 9999: Client for paste.xinu.at
 sys-fs/gocryptfs 1.7.1: Encrypted overlay filesystem written in Go
