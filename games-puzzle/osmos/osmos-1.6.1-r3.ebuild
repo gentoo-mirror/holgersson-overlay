@@ -1,9 +1,9 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="6"
+EAPI="7"
 
-inherit eutils
+inherit desktop eutils
 
 MY_PN="Osmos"
 MY_P="${MY_PN}_${PV}"
@@ -16,15 +16,20 @@ LICENSE="Hemisphere_Games-EULA"
 SLOT="0"
 KEYWORDS="-* ~amd64 ~x86"
 IUSE=""
-RESTRICT="fetch strip"
+
+RESTRICT="bindist fetch strip test"
 PROPERTIES="interactive"
 
-RDEPEND="media-libs/freetype:2
-	media-libs/openal
+RDEPEND="
+	media-libs/freetype:2
 	media-libs/libvorbis
-	virtual/opengl
+	media-libs/openal
 	virtual/glu
-	x11-libs/libX11"
+	virtual/opengl
+	x11-libs/libX11
+"
+
+QA_PREBUILT="/opt/osmos/osmos"
 
 DEPEND="${RDEPEND}"
 
