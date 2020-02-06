@@ -1,9 +1,10 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
 EGO_PN="github.com/${PN}/${PN}"
+
 if [[ ${PV} == *9999 ]]; then
 	EGIT_REPO_URI="https://${EGO_PN}"
 	inherit git-r3
@@ -14,17 +15,19 @@ fi
 
 HOMEPAGE="https://git-lfs.github.com/"
 DESCRIPTION="command line extension and specification for managing large files with Git"
-
 LICENSE="Apache-2.0 BSD BSD-2 BSD-4 ISC MIT"
-SLOT="0"
-IUSE="doc"
 
-DEPEND="dev-lang/go
-	doc? ( app-text/ronn )"
+SLOT="0"
+IUSE="doc test"
+RESTRICT="!test? ( test )"
+
+DEPEND="
+	dev-lang/go
+	doc? ( app-text/ronn )
+"
 RDEPEND="dev-vcs/git"
 
 QA_FLAGS_IGNORED="/usr/bin/git-lfs"
-RESTRICT="strip"
 
 src_compile() {
 	set -- go build \
