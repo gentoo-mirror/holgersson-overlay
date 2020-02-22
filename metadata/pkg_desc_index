@@ -1,9 +1,14 @@
 app-crypt/sirikali 1.4.2-r1: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
 app-emulation/lxd 3.16-r1: Fast, dense and secure container management
-app-vim/python-mode 0.10.0_p20200126: vim plugin: Turn vim into a python IDE
-app-vim/riv 0.793_p20190914-r1 9999: vim plugin: Take Notes in rst
+app-vim/python-mode 0.10.0_p20200215: vim plugin: Turn vim into a python IDE
+app-vim/riv 0.793_p20200217 9999: vim plugin: Take Notes in rst
+dev-python/eradicate 1.0: Removes commented-out code from Python files
 dev-python/firefox-shm 0.0.9-r1: Use tmpfs on /dev/shm to store the firefox profile
+dev-python/mando 0.6.4: Create Python CLI apps with little to no effort at all!
+dev-python/pylama 7.7.1: Code audit tool for python
 dev-python/python-nmap 0.6.1-r2: A Python library which helps in using the nmap port scanner
+dev-python/radon 1.4.2 4.1.0: Code Metrics in Python
+dev-python/ropemode 0.4 0.5: A helper for using rope refactoring library in IDEs
 dev-python/soundfile 0.10.3-r2: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
 dev-vcs/git-lfs 2.10.0: command line extension and specification for managing large files with Git
 games-puzzle/osmos 1.6.1-r3: Play as a single-celled organism absorbing others
