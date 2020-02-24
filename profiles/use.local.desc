@@ -7,5 +7,7 @@ app-crypt/sirikali:kwallet - Enable support for storing passwords in kwallet
 app-emulation/lxd:daemon - Build the system daemon, not just the client tool
 app-emulation/lxd:dnsmasq - Depend on dnsmasq to provide DHCP and DNS
 app-emulation/lxd:tools - Build and install optional tools
+net-im/qtox:auto-away - Add support to set the state depending on desktop activity
+net-im/qtox:notification - Adds support for GTK Status Notifier tray backends
 net-misc/fb-client:clipboard - Support writing to X clipboard via x11-misc/xclip
 sys-fs/gocryptfs:man - Build and install man pages
