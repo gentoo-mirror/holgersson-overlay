@@ -5,7 +5,7 @@ EAPI="7"
 
 inherit cmake-utils gnome2-utils xdg-utils
 
-COMMIT_ID="13cf04fad93e089cf6ef1f75a7b64e50d989d3fa"
+COMMIT_ID="da0bae54305560db390d87c1eeb7aa86dacf04a4"
 
 DESCRIPTION="Most feature-rich GUI for net-libs/tox using Qt5"
 HOMEPAGE="https://github.com/qTox/qTox"
@@ -36,10 +36,7 @@ RDEPEND="
 	dev-libs/libsodium:=
 	dev-qt/qtconcurrent:5
 	dev-qt/qtcore:5
-	|| (
-		dev-qt/qtgui:5[gif,jpeg,png,xcb]
-		dev-qt/qtgui:5[gif,jpeg,png,X]
-	)
+	dev-qt/qtgui:5[gif,jpeg,png,X]
 	dev-qt/qtnetwork:5
 	dev-qt/qtopengl:5
 	dev-qt/qtsql:5
