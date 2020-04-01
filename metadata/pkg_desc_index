@@ -1,5 +1,4 @@
-app-crypt/sirikali 1.4.2-r1: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
-app-emulation/lxd 3.16-r1: Fast, dense and secure container management
+app-crypt/sirikali 1.4.3: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
 app-vim/python-mode 0.10.0_p20200215: vim plugin: Turn vim into a python IDE
 app-vim/riv 0.793_p20200217 9999: vim plugin: Take Notes in rst
 dev-python/eradicate 1.0: Removes commented-out code from Python files
@@ -10,9 +9,8 @@ dev-python/python-nmap 0.6.1-r2: A Python library which helps in using the nmap 
 dev-python/radon 1.4.2 4.1.0: Code Metrics in Python
 dev-python/ropemode 0.4 0.5: A helper for using rope refactoring library in IDEs
 dev-python/soundfile 0.10.3-r2: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
-dev-vcs/git-lfs 2.10.0: command line extension and specification for managing large files with Git
 games-puzzle/osmos 1.6.1-r3: Play as a single-celled organism absorbing others
 media-fonts/sans-bullshit-sans 0.1: A media-fonts/droid based font with buzzword censorship
-net-im/qtox 1.16.3_p20200223: Most feature-rich GUI for net-libs/tox using Qt5
+net-im/qtox 1.17.0_p2020329: Most feature-rich GUI for net-libs/tox using Qt5
 net-misc/fb-client 2.0.4-r1 9999: Client for paste.xinu.at
 sys-fs/gocryptfs 1.7.1: Encrypted overlay filesystem written in Go
