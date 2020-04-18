@@ -1,13 +1,17 @@
 app-crypt/archlinux-keyring 20200108: GnuPG keyring of Archlinux developer keys
 app-crypt/sirikali 1.4.3: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
+app-misc/khard 0.16.1: Console CardDAV client
 app-vim/python-mode 0.10.0_p20200215: vim plugin: Turn vim into a python IDE
 app-vim/riv 0.793_p20200217 9999: vim plugin: Take Notes in rst
 dev-python/firefox-shm 0.0.9-r1: Use tmpfs on /dev/shm to store the firefox profile
+dev-python/pytest-subtesthack 0.1.1-r1: A hack for test fixtures, needed for hypothesis inside py.test
 dev-python/python-nmap 0.6.1-r2: A Python library which helps in using the nmap port scanner
 dev-python/soundfile 0.10.3-r2: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
+dev-python/vdirsyncer 0.16.7-r1: Synchronize calendars and contacts
 games-puzzle/osmos 1.6.1-r3: Play as a single-celled organism absorbing others
 media-fonts/sans-bullshit-sans 0.1: A media-fonts/droid based font with buzzword censorship
 net-im/qtox 1.17.0_p2020329: Most feature-rich GUI for net-libs/tox using Qt5
+net-mail/urlscan 0.9.4: Mutt and terminal url selector (similar to urlview)
 net-misc/fb-client 2.0.4-r2 9999: Client for paste.xinu.at
 sys-apps/pacman 5.2.1: Archlinux's binary package manager
 sys-apps/pacman-mirrorlist 20200207: Repository list for Archlinux's binary package manager
