@@ -13,6 +13,8 @@ media-fonts/sans-bullshit-sans 0.1: A media-fonts/droid based font with buzzword
 net-im/qtox 1.17.0_p2020329: Most feature-rich GUI for net-libs/tox using Qt5
 net-mail/urlscan 0.9.4: Mutt and terminal url selector (similar to urlview)
 net-misc/fb-client 2.0.4-r2 9999: Client for paste.xinu.at
+net-news/canto-curses 0.9.9: The ncurses client for canto-daemon
+net-news/canto-daemon 0.9.7: Daemon part of Canto-NG RSS reader
 sys-apps/pacman 5.2.1: Archlinux's binary package manager
 sys-apps/pacman-mirrorlist 20200207: Repository list for Archlinux's binary package manager
 sys-fs/gocryptfs 1.7.1: Encrypted overlay filesystem written in Go
