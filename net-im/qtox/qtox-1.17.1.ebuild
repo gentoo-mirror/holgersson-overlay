@@ -5,7 +5,7 @@ EAPI="7"
 
 inherit cmake-utils gnome2-utils xdg-utils
 
-COMMIT_ID="da0bae54305560db390d87c1eeb7aa86dacf04a4"
+COMMIT_ID=""
 
 DESCRIPTION="Most feature-rich GUI for net-libs/tox using Qt5"
 HOMEPAGE="https://github.com/qTox/qTox"
