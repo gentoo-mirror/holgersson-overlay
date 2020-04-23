@@ -1,0 +1,12 @@
+DEFINED_PHASES=install prepare
+DEPEND=!sci-mathematics/scilab
+DESCRIPTION=Open source software for numerical computation
+EAPI=7
+HOMEPAGE=https://scilab.org
+KEYWORDS=-* ~amd64 ~x86
+LICENSE=BSD || ( GPL-2 CeCILL-2.1 ) BCL-for-JAVA-SE
+RDEPEND=!sci-mathematics/scilab sys-libs/ncurses-compat
+RESTRICT=mirror strip test
+SLOT=0
+SRC_URI=amd64? ( https://www.scilab.org/download/6.1.0/scilab-6.1.0.bin.linux-x86_64.tar.gz -> scilab-bin-6.1.0-amd64.tar.gz ) x86? ( https://www.scilab.org/download/6.1.0/scilab-6.1.0.bin.linux-i686.tar.gz -> scilab-bin-6.1.0-x86.tar.gz )
+_md5_=4f6b72b2b74f4f7e2ea560988542787d
