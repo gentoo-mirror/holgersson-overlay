@@ -20,4 +20,4 @@ sci-mathematics/scilab-bin 6.1.0: Open source software for numerical computation
 sys-apps/pacman 5.2.1: Archlinux's binary package manager
 sys-apps/pacman-mirrorlist 20200411: Repository list for Archlinux's binary package manager
 sys-fs/gocryptfs 1.7.1: Encrypted overlay filesystem written in Go
-x11-wm/xpra 3.0.9: X Persistent Remote Apps (xpra) and Partitioning WM (parti) based on wimpiggy
+x11-wm/xpra 3.0.9-r1: X Persistent Remote Apps (xpra) and Partitioning WM (parti) based on wimpiggy
