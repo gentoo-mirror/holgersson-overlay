@@ -10,3 +10,10 @@ net-misc/fb-client:clipboard - Support writing to X clipboard via x11-misc/xclip
 sys-apps/pacman:doc - Install extended documentation using app-doc/doxygen. (Man pages are included by default.)
 sys-apps/pacman:gpg - Enable GPG signature verification using app-crypt/gpgme
 sys-fs/gocryptfs:man - Build and install man pages
+x11-wm/xpra:client - Build client-side code
+x11-wm/xpra:clipboard - Enable clipboard support
+x11-wm/xpra:csc - Enable csc softscaler support
+x11-wm/xpra:pillow - Enable pillow support
+x11-wm/xpra:server - Build server-side code
+x11-wm/xpra:vpx - Enable vpx image format support
+x11-wm/xpra:webcam - Enable webcam support via opencv
