@@ -5,7 +5,7 @@ EAPI="7"
 
 DESCRIPTION="Repository list for Archlinux's binary package manager"
 HOMEPAGE="https://www.archlinux.org/mirrorlist/"
-SRC_URI="https://git.archlinux.org/svntogit/packages.git/plain/trunk/mirrorlist?h=packages/pacman-mirrorlist -> ${P}"
+SRC_URI="https://git.archlinux.org/svntogit/packages.git/plain/trunk/mirrorlist?h=packages/pacman-mirrorlist&id=a63fcf18ea98e546e3071ee0019120166a2897dd -> ${P}"
 KEYWORDS="~amd64"
 LICENSE="GPL-2"
 SLOT=0
