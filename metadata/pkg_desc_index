@@ -1,12 +1,12 @@
-app-crypt/archlinux-keyring 20200422: GnuPG keyring of Archlinux developer keys
-app-crypt/sirikali 1.4.3: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
+app-crypt/archlinux-keyring 20200603: GnuPG keyring of Archlinux developer keys
+app-crypt/sirikali 1.4.4: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
 app-emulation/podman-compose 0.1.5: Run docker-compose files without root with podman
 app-misc/khal 0.10.1-r2: A CalDAV based calendar
 app-misc/khard 0.16.1: Console CardDAV client
 app-vim/python-mode 0.10.0_p20200215: vim plugin: Turn vim into a python IDE
 app-vim/riv 0.793_p20200217 9999: vim plugin: Take Notes in rst
 dev-python/firefox-shm 0.0.9-r1: Use tmpfs on /dev/shm to store the firefox profile
-dev-python/hdf5storage 0.1.15: Python library for using HDF5 formatted files
+dev-python/hdf5storage 0.1.15-r1: Python library for using HDF5 formatted files
 dev-python/pytest-subtesthack 0.1.1-r1: A hack for test fixtures, needed for hypothesis inside py.test
 dev-python/python-nmap 0.6.1-r2: A Python library which helps in using the nmap port scanner
 dev-python/soundfile 0.10.3-r2: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
@@ -20,6 +20,6 @@ net-news/canto-curses 0.9.9: The ncurses client for canto-daemon
 net-news/canto-daemon 0.9.7: Daemon part of Canto-NG RSS reader
 sci-mathematics/scilab-bin 6.1.0: Open source software for numerical computation
 sys-apps/pacman 5.2.1: Archlinux's binary package manager
-sys-apps/pacman-mirrorlist 20200411: Repository list for Archlinux's binary package manager
+sys-apps/pacman-mirrorlist 20200606: Repository list for Archlinux's binary package manager
 sys-fs/gocryptfs 1.7.1: Encrypted overlay filesystem written in Go
 x11-wm/xpra 3.0.9-r1: X Persistent Remote Apps (xpra) and Partitioning WM (parti) based on wimpiggy
