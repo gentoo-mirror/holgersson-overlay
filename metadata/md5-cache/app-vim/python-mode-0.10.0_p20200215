@@ -10,5 +10,5 @@ RDEPEND=>=dev-python/astroid-2.1.0[python_targets_python3_6(-)?,python_targets_p
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/klen/python-mode/archive/30a73d861aba2e1a5e0693d3a3df30293182efe2.tar.gz -> python-mode-0.10.0_p20200215.tar.gz
-_eclasses_=estack	686eaab303305a908fd57b2fd7617800	multibuild	40fe59465edacd730c644ec2bc197809	multilib	0914eab919f4f11dd9e0407b92af4726	python-r1	8386b016a2b3bbefa88443fdaa898057	python-utils-r1	ace0a9a129fcfeaae542c0d15c07f36a	toolchain-funcs	d3e75048a89c0445838d2f44e5c65d97	vim-doc	af2c81a1feeb0a99e91bee3e20769edb	vim-plugin	3160d9cb05ef44497be1485db0fe7590
+_eclasses_=estack	686eaab303305a908fd57b2fd7617800	multibuild	40fe59465edacd730c644ec2bc197809	multilib	ba693a7065ee4edc78b3ea02a015bcad	python-r1	8386b016a2b3bbefa88443fdaa898057	python-utils-r1	ace0a9a129fcfeaae542c0d15c07f36a	toolchain-funcs	d3e75048a89c0445838d2f44e5c65d97	vim-doc	af2c81a1feeb0a99e91bee3e20769edb	vim-plugin	3160d9cb05ef44497be1485db0fe7590
 _md5_=6cf218cc12e2b9088f5f2ecc01675ce3
