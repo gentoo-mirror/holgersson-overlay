@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-inherit eutils cmake-utils
+inherit eutils cmake
 
 S="${WORKDIR}/SiriKali-${PV}"
 
