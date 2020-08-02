@@ -1,5 +1,5 @@
 app-crypt/archlinux-keyring 20200622: GnuPG keyring of Archlinux developer keys
-app-crypt/sirikali 1.4.4: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
+app-crypt/sirikali 1.4.5: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
 app-emulation/podman-compose 0.1.5: Run docker-compose files without root with podman
 app-misc/khal 0.10.1-r2: A CalDAV based calendar
 app-misc/khard 0.16.1: Console CardDAV client
@@ -18,7 +18,7 @@ net-misc/fb-client 2.0.4-r2 9999: Client for paste.xinu.at
 net-news/canto-curses 0.9.9: The ncurses client for canto-daemon
 net-news/canto-daemon 0.9.7: Daemon part of Canto-NG RSS reader
 sci-mathematics/scilab-bin 6.1.0: Open source software for numerical computation
-sys-apps/pacman 5.2.1: Archlinux's binary package manager
-sys-apps/pacman-mirrorlist 20200606: Repository list for Archlinux's binary package manager
+sys-apps/pacman 5.2.2: Archlinux's binary package manager
+sys-apps/pacman-mirrorlist 20200801: Repository list for Archlinux's binary package manager
 sys-fs/gocryptfs 1.7.1: Encrypted overlay filesystem written in Go
 x11-wm/xpra 3.0.9-r1: X Persistent Remote Apps (xpra) and Partitioning WM (parti) based on wimpiggy
