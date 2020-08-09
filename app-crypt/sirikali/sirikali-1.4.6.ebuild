@@ -39,9 +39,5 @@ src_configure() {
 		-DNOSECRETSUPPORT=${MY_S_FLAG}
 		-DNOKDESUPPORT=true
 	)
-	cmake-utils_src_configure
-}
-
-src_install() {
-	cmake-utils_src_install
+	cmake_src_configure
 }
