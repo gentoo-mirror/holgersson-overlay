@@ -1,4 +1,4 @@
-app-crypt/archlinux-keyring 20200817: GnuPG keyring of Archlinux developer keys
+app-crypt/archlinux-keyring 20200820: GnuPG keyring of Archlinux developer keys
 app-crypt/sirikali 1.4.6: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
 app-emulation/podman-compose 0.1.5: Run docker-compose files without root with podman
 app-misc/khal 0.10.1-r2: A CalDAV based calendar
