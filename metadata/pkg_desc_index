@@ -1,9 +1,7 @@
 app-crypt/archlinux-keyring 20200820: GnuPG keyring of Archlinux developer keys
-app-crypt/sirikali 1.4.6: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
+app-crypt/sirikali 1.4.7: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
 app-emulation/podman-compose 0.1.5: Run docker-compose files without root with podman
-app-misc/khal 0.10.1-r2: A CalDAV based calendar
-app-misc/khard 0.16.1: Console CardDAV client
-app-vim/python-mode 0.10.0_p20200606: vim plugin: Turn vim into a python IDE
+app-vim/python-mode 0.10.0_p20200904: vim plugin: Turn vim into a python IDE
 app-vim/riv 0.793_p20200217 9999: vim plugin: Take Notes in rst
 dev-python/firefox-shm 0.0.9-r1: Use tmpfs on /dev/shm to store the firefox profile
 dev-python/hdf5storage 0.1.15-r1: Python library for using HDF5 formatted files
