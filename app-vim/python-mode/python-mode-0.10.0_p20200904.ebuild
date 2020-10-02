@@ -6,7 +6,7 @@ EAPI="7"
 PYTHON_COMPAT=( python3_7 )
 inherit python-r1 vim-plugin
 
-COMMIT_ID="51c66faf14b824ee5d6ddfc5a54530d9f92fe764"
+COMMIT_ID="295e84d9dd7f4887f8a5635e9dfe88dfeabaf00c"
 
 DESCRIPTION="vim plugin: Turn vim into a python IDE"
 HOMEPAGE="http://www.vim.org/scripts/script.php?script_id=3770 https://github.com/klen/python-mode"
