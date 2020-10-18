@@ -3,9 +3,11 @@
 
 EAPI="7"
 
+COMMIT_ID="1340eaed303c57e74bab8d6c390c9c294c59fa2f"
+
 DESCRIPTION="Repository list for Archlinux's binary package manager"
 HOMEPAGE="https://www.archlinux.org/mirrorlist/"
-SRC_URI="https://raw.githubusercontent.com/archlinux/svntogit-packages/5ab4b6f754c607461931733bd8e03b335c9fa51c/trunk/mirrorlist -> ${P}"
+SRC_URI="https://raw.githubusercontent.com/archlinux/svntogit-packages/${COMMIT_ID}/trunk/mirrorlist -> ${P}"
 KEYWORDS="~amd64"
 LICENSE="GPL-2"
 SLOT=0
