@@ -14,6 +14,7 @@ net-im/qtox 1.17.2: Most feature-rich GUI for net-libs/tox using Qt5
 net-im/toot 0.27.0: CLI/TUI mastodon client written in python
 net-mail/urlscan 0.9.4: Mutt and terminal url selector (similar to urlview)
 net-misc/fb-client 2.1.1 9999: Client for paste.xinu.at
+net-nds/ldapcherry 1.1.1_p20200520: LDAP web UI written in python
 net-news/canto-curses 0.9.9: The ncurses client for canto-daemon
 net-news/canto-daemon 0.9.7: Daemon part of Canto-NG RSS reader
 sci-mathematics/scilab-bin 6.1.0: Open source software for numerical computation
