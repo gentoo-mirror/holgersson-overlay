@@ -4,6 +4,11 @@
 
 app-crypt/sirikali:gnome-keyring - Enable support for storing passowrds in gnome-keyring
 app-crypt/sirikali:kwallet - Enable support for storing passwords in kwallet
+app-emulation/nemu:network-map - Adds possibility of exporting network map to SVG
+app-emulation/nemu:ovf - Adds support for OVA/OVF import
+app-emulation/nemu:savevm - Adds support for QEMU savevm snapshots (experimental, QEMU must be patched)
+app-emulation/nemu:spice - Adds Spice protocol support
+app-emulation/nemu:vnc-client - Adds support for external VNC client
 net-im/profanity:gpg - Enable OpenPGP encryption
 net-im/profanity:omemo - Enable OMEMO encryption
 net-im/profanity:otr - Enable encrypted conversations using Off-The-Records messaging
