@@ -9,20 +9,9 @@ app-emulation/nemu:ovf - Adds support for OVA/OVF import
 app-emulation/nemu:savevm - Adds support for QEMU savevm snapshots (experimental, QEMU must be patched)
 app-emulation/nemu:spice - Adds Spice protocol support
 app-emulation/nemu:vnc-client - Adds support for external VNC client
-net-im/profanity:gpg - Enable OpenPGP encryption
-net-im/profanity:omemo - Enable OMEMO encryption
-net-im/profanity:otr - Enable encrypted conversations using Off-The-Records messaging
-net-im/profanity:xscreensaver - Use x11-libs/libXScrnSaver to detect if user is idle
 net-im/qtox:auto-away - Add support to set the state depending on desktop activity
 net-im/qtox:notification - Adds support for GTK Status Notifier tray backends
 net-misc/fb-client:clipboard - Support writing to X clipboard via x11-misc/xclip
 sys-apps/pacman:doc - Install extended documentation using app-doc/doxygen. (Man pages are included by default.)
 sys-apps/pacman:gpg - Enable GPG signature verification using app-crypt/gpgme
 sys-fs/gocryptfs:man - Build and install man pages
-x11-wm/xpra:client - Build client-side code
-x11-wm/xpra:clipboard - Enable clipboard support
-x11-wm/xpra:csc - Enable csc softscaler support
-x11-wm/xpra:pillow - Enable pillow support
-x11-wm/xpra:server - Build server-side code
-x11-wm/xpra:vpx - Enable vpx image format support
-x11-wm/xpra:webcam - Enable webcam support via opencv
