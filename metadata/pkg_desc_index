@@ -17,7 +17,7 @@ games-puzzle/osmos 1.6.1-r3: Play as a single-celled organism absorbing others
 media-fonts/sans-bullshit-sans 0.1: A media-fonts/droid based font with buzzword censorship
 net-im/qtox 1.17.2: Most feature-rich GUI for net-libs/tox using Qt5
 net-im/toot 0.27.0: CLI/TUI mastodon client written in python
-net-mail/urlscan 0.9.4-r1: Mutt and terminal url selector (similar to urlview)
+net-mail/urlscan 0.9.5: Mutt and terminal url selector (similar to urlview)
 net-misc/fb-client 2.1.1 9999: Client for paste.xinu.at
 net-nds/ldapcherry 1.1.1_p20200520: LDAP web UI written in python
 net-news/canto-curses 0.9.9: The ncurses client for canto-daemon
