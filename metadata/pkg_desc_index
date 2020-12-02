@@ -1,5 +1,5 @@
 app-crypt/archlinux-keyring 20201028: GnuPG keyring of Archlinux developer keys
-app-crypt/sirikali 1.4.7: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
+app-crypt/sirikali 1.4.8: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
 app-emulation/nemu 2.5.0: ncurses interface for QEMU
 app-emulation/podman-compose 0.1.5: Run docker-compose files without root with podman
 app-vim/python-mode 0.13.0: vim plugin: Turn vim into a python IDE
@@ -22,7 +22,6 @@ net-misc/fb-client 2.1.1 9999: Client for paste.xinu.at
 net-nds/ldapcherry 1.1.1_p20200520: LDAP web UI written in python
 net-news/canto-curses 0.9.9: The ncurses client for canto-daemon
 net-news/canto-daemon 0.9.7: Daemon part of Canto-NG RSS reader
-sci-mathematics/scilab-bin 6.1.0: Open source software for numerical computation
 sys-apps/pacman 5.2.2: Archlinux's binary package manager
 sys-apps/pacman-mirrorlist 20201031: Repository list for Archlinux's binary package manager
 sys-fs/gocryptfs 1.8.0: Encrypted overlay filesystem written in Go
