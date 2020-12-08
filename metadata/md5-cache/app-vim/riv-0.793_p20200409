@@ -11,4 +11,4 @@ RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/gu-fan/riv.vim/archive/e26c3e8dce4c1332e802cde84f83e61ec8a13986.tar.gz -> riv-0.793_p20200409.tar.gz
 _eclasses_=estack	686eaab303305a908fd57b2fd7617800	vim-doc	af2c81a1feeb0a99e91bee3e20769edb	vim-plugin	3160d9cb05ef44497be1485db0fe7590
-_md5_=1e2009fe2c9b9971c1bbc58140ac8332
+_md5_=e841c2675fb8aa1b3092a30f693e558e
