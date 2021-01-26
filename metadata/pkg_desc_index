@@ -1,10 +1,11 @@
-app-crypt/archlinux-keyring 20201028: GnuPG keyring of Archlinux developer keys
+app-crypt/archlinux-keyring 20210110: GnuPG keyring of Archlinux developer keys
 app-crypt/sirikali 1.4.8: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
 app-emulation/nemu 2.5.1: ncurses interface for QEMU
-app-emulation/podman-compose 0.1.5-r1: Run docker-compose files without root with podman
+app-emulation/podman-compose 0.1.5-r1 0.1.5_p20201202: Run docker-compose files without root with podman
 app-vim/python-mode 0.13.0-r1: vim plugin: Turn vim into a python IDE
 app-vim/riv 0.793_p20200409 9999: vim plugin: Take Notes in rst
-dev-python/control 0.8.3-r1: Python Control Systems Library
+dev-libs/olm 3.2.1: Implementation of the olm and megolm cryptographic ratchets
+dev-python/control 0.8.4: Python Control Systems Library
 dev-python/hdf5storage 0.1.15-r2: Python library for using HDF5 formatted files
 dev-python/multi_key_dict 2.0.3-r1: Multi key dictionary implementation
 dev-python/pytest-subtesthack 0.1.1-r3: A hack for test fixtures, needed for hypothesis inside py.test
@@ -12,9 +13,11 @@ dev-python/python-jenkins 1.7.0-r1: Python bindings for the remote Jenkins API
 dev-python/python-nmap 0.6.1-r3: A Python library which helps in using the nmap port scanner
 dev-python/rope 0.18.0-r1: Python refactoring library
 dev-python/soundfile 0.10.3_p20201204: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
+dev-python/uliengineering 0.3.5: Computational tools for electronics engineering
 games-puzzle/osmos 1.6.1-r3: Play as a single-celled organism absorbing others
 media-fonts/sans-bullshit-sans 0.1: A media-fonts/droid based font with buzzword censorship
-net-im/qtox 1.17.2: Most feature-rich GUI for net-libs/tox using Qt5
+net-im/gomuks 0.2.2: A terminal based Matrix client written in Go
+net-im/qtox 1.17.3: Most feature-rich GUI for net-libs/tox using Qt5
 net-im/toot 0.27.0-r1: CLI/TUI mastodon client written in python
 net-mail/urlscan 0.9.5-r1: Mutt and terminal url selector (similar to urlview)
 net-misc/fb-client 2.1.1-r1 9999: Client for paste.xinu.at
@@ -22,5 +25,5 @@ net-nds/ldapcherry 1.1.1_p20200520-r1: LDAP web UI written in python
 net-news/canto-curses 0.9.9-r1: The ncurses client for canto-daemon
 net-news/canto-daemon 0.9.8: Daemon part of Canto-NG RSS reader
 sys-apps/pacman 5.2.2: Archlinux's binary package manager
-sys-apps/pacman-mirrorlist 20201205: Repository list for Archlinux's binary package manager
+sys-apps/pacman-mirrorlist 20210110: Repository list for Archlinux's binary package manager
 sys-fs/gocryptfs 1.8.0: Encrypted overlay filesystem written in Go

@@ -9,6 +9,7 @@ app-emulation/nemu:ovf - Adds support for OVA/OVF import
 app-emulation/nemu:savevm - Adds support for QEMU savevm snapshots (experimental, QEMU must be patched)
 app-emulation/nemu:spice - Adds Spice protocol support
 app-emulation/nemu:vnc-client - Adds support for external VNC client
+net-im/gomuks:encryption - Use dev-libs/olm for encryption
 net-im/qtox:auto-away - Add support to set the state depending on desktop activity
 net-im/qtox:notification - Adds support for GTK Status Notifier tray backends
 net-misc/fb-client:clipboard - Support writing to X clipboard via x11-misc/xclip
