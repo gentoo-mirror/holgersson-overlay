@@ -1,9 +1,10 @@
 app-crypt/archlinux-keyring 20210110: GnuPG keyring of Archlinux developer keys
 app-crypt/sirikali 1.4.8: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
-app-emulation/nemu 2.5.1: ncurses interface for QEMU
+app-emulation/nemu 2.5.1-r1: ncurses interface for QEMU
 app-emulation/podman-compose 0.1.5-r1 0.1.5_p20201202: Run docker-compose files without root with podman
 app-vim/python-mode 0.13.0-r1: vim plugin: Turn vim into a python IDE
 app-vim/riv 0.793_p20200409 9999: vim plugin: Take Notes in rst
+app-vim/vimwiki 2.5: vim plugin: Personal Wiki
 dev-libs/olm 3.2.1: Implementation of the olm and megolm cryptographic ratchets
 dev-python/control 0.8.4: Python Control Systems Library
 dev-python/hdf5storage 0.1.15-r2: Python library for using HDF5 formatted files
@@ -18,7 +19,7 @@ games-puzzle/osmos 1.6.1-r3: Play as a single-celled organism absorbing others
 media-fonts/sans-bullshit-sans 0.1: A media-fonts/droid based font with buzzword censorship
 media-sound/ffmpeg-normalize 1.20.2: Utility for batch-normalizing audio using ffmpeg
 media-sound/pulseaudio 14.2: A networked sound server with an advanced plugin system
-net-im/gomuks 0.2.2: A terminal based Matrix client written in Go
+net-im/gomuks 0.2.3: A terminal based Matrix client written in Go
 net-im/qtox 1.17.3: Most feature-rich GUI for net-libs/tox using Qt5
 net-im/toot 0.27.0-r1: CLI/TUI mastodon client written in python
 net-mail/urlscan 0.9.5-r1: Mutt and terminal url selector (similar to urlview)
@@ -29,4 +30,3 @@ net-news/canto-daemon 0.9.8: Daemon part of Canto-NG RSS reader
 sys-apps/pacman 5.2.2: Archlinux's binary package manager
 sys-apps/pacman-mirrorlist 20210206: Repository list for Archlinux's binary package manager
 sys-fs/gocryptfs 1.8.0: Encrypted overlay filesystem written in Go
-sys-power/uhubctl 2.3.0 9999: USB hub per-port power control
