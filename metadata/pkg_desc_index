@@ -4,6 +4,7 @@ app-emulation/nemu 2.5.1-r1: ncurses interface for QEMU
 app-emulation/podman-compose 0.1.5-r1 0.1.5_p20201202: Run docker-compose files without root with podman
 app-vim/python-mode 0.13.0-r1: vim plugin: Turn vim into a python IDE
 app-vim/riv 0.793_p20200409 9999: vim plugin: Take Notes in rst
+app-vim/vim-obsession 1.0_p20200119: vim plugin: mksession automation tool
 app-vim/vim-redacted 0.2_p20191215: vim plugin: Redact text
 app-vim/vimwiki 2.5: vim plugin: Personal Wiki
 dev-libs/olm 3.2.2: Implementation of the olm and megolm cryptographic ratchets

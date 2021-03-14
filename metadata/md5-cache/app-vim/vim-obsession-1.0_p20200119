@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst postrm
+DEPEND=|| ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
+DESCRIPTION=vim plugin: mksession automation tool
+EAPI=7
+HOMEPAGE=https://www.vim.org/scripts/script.php?script_id=4472 https://github.com/tpope/vim-obsession
+IUSE=test
+KEYWORDS=~amd64 ~x86
+LICENSE=vim
+RDEPEND=|| ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/tpope/vim-obsession/archive/96a3f837c112cb64e0a9857b69f6d6a71041155e.tar.gz -> vim-obsession-1.0_p20200119.tar.gz
+_eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	vim-doc	dd0828b15877b2a09c07f4719e45891f	vim-plugin	3160d9cb05ef44497be1485db0fe7590
+_md5_=beac063acd2066c8cd7eac2b272fed23
