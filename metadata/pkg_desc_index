@@ -17,7 +17,6 @@ dev-python/rope 0.18.0-r1: Python refactoring library
 dev-python/soundfile 0.10.3_p20201204: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
 dev-python/uliengineering 0.3.5: Computational tools for electronics engineering
 games-puzzle/osmos 1.6.1-r3: Play as a single-celled organism absorbing others
-media-fonts/sans-bullshit-sans 0.1: A media-fonts/droid based font with buzzword censorship
 media-sound/ffmpeg-normalize 1.22.0: Utility for batch-normalizing audio using ffmpeg
 media-sound/pulseaudio 14.2: A networked sound server with an advanced plugin system
 net-im/gomuks 0.2.3: A terminal based Matrix client written in Go
