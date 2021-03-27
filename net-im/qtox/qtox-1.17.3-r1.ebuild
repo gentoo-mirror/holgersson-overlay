@@ -27,15 +27,19 @@ fi
 
 LICENSE="GPL-3+"
 SLOT="0"
-IUSE="+auto-away +notification test"
+IUSE="+auto-away +notification spell test"
 RESTRICT="!test? ( test )"
 
+BDEPEND="
+	dev-qt/linguist-tools:5
+	virtual/pkgconfig
+"
 RDEPEND="
 	dev-db/sqlcipher
 	dev-libs/libsodium:=
 	dev-qt/qtconcurrent:5
 	dev-qt/qtcore:5
-	dev-qt/qtgui:5[gif,jpeg,png,X]
+	dev-qt/qtgui:5[gif,jpeg,png,X(-)]
 	dev-qt/qtnetwork:5
 	dev-qt/qtopengl:5
 	dev-qt/qtsql:5
@@ -52,6 +56,7 @@ RDEPEND="
 		x11-libs/libX11
 		x11-libs/libXScrnSaver
 	)
+	spell? ( kde-frameworks/sonnet )
 "
 DEPEND="${RDEPEND}
 	dev-qt/linguist-tools:5
@@ -71,9 +76,13 @@ src_prepare() {
 
 src_configure() {
 	local mycmakeargs=(
+		-DENABLE_STATUSNOTIFIER=$(usex notification)
 		-DDESKTOP_NOTIFICATIONS=$(usex notification)
+		-DSPELL_CHECK=$(usex spell)
 		-DUSE_FILTERAUDIO=OFF
 		-DGIT_DESCRIBE="${PV}"
+		-DPLATFORM_EXTENSIONS=$(usex auto-away)
+		-DUPDATE_CHECK=OFF
 	)
 
 	cmake_src_configure
