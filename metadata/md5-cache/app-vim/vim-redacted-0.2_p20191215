@@ -3,6 +3,7 @@ DEPEND=|| ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
 DESCRIPTION=vim plugin: Redact text
 EAPI=7
 HOMEPAGE=https://github.com/dbmrq/vim-redacted
+INHERIT=vim-plugin
 IUSE=test
 KEYWORDS=~amd64 ~x86
 LICENSE=vim
