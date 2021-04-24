@@ -6,14 +6,28 @@ EAPI=7
 inherit cmake linux-info
 
 MY_PV="${PV/_rc/-RC}"
+COMMIT_ID="88bae5482a9bf73126e9f638c84f2e6bbc4dfc59"
 
 DESCRIPTION="ncurses interface for QEMU"
 HOMEPAGE="https://github.com/nemuTUI/nemu"
-SRC_URI="https://github.com/nemuTUI/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
+
+if [[ ${PV} == *9999 ]]; then
+	EGIT_REPO_URI="https://github.com/nemuTUI/${PN}.git"
+	inherit git-r3
+else
+	if [[ ${PV} == *_p* ]]; then
+		SRC_URI="https://github.com/nemuTUI/${PN}/archive/${COMMIT_ID}.tar.gz -> ${P}.tar.gz"
+		S="${WORKDIR}/${PN}-${COMMIT_ID}"
+		KEYWORDS="~amd64 ~x86"
+	else
+		SRC_URI="https://github.com/nemuTUI/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
+		KEYWORDS="~amd64 ~x86"
+		S="${WORKDIR}/$PN-${MY_PV}/"
+	fi
+fi
 
 LICENSE="BSD-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
 IUSE="dbus network-map +ovf +savevm spice +vnc-client"
 
 RDEPEND="
@@ -33,7 +47,6 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}"
 BDEPEND="sys-devel/gettext"
-S="${WORKDIR}/$PN-${MY_PV}/"
 
 pkg_pretend() {
 	if use kernel_linux; then
