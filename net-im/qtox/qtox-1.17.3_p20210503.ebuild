@@ -5,7 +5,7 @@ EAPI="7"
 
 inherit cmake gnome2-utils xdg-utils
 
-COMMIT_ID=""
+COMMIT_ID="8c34fa8f7d34e6555533f392925164b47da12d8c"
 
 DESCRIPTION="Most feature-rich GUI for net-libs/tox using Qt5"
 HOMEPAGE="https://github.com/qTox/qTox"
@@ -15,12 +15,12 @@ if [[ ${PV} == *9999 ]]; then
 	inherit git-r3
 else
 	if [[ ${PV} == *_p* ]]; then
+		KEYWORDS="~amd64 ~x86"
 		SRC_URI="https://github.com/qTox/qTox/archive/${COMMIT_ID}.tar.gz -> ${P}.tar.gz"
 		S="${WORKDIR}/qTox-${COMMIT_ID}"
-		KEYWORDS="~amd64 ~x86"
 	else
-		SRC_URI="https://github.com/qTox/qTox/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 		KEYWORDS="~amd64 ~x86"
+		SRC_URI="https://github.com/qTox/qTox/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 		S="${WORKDIR}/qTox-${PV}"
 	fi
 fi
