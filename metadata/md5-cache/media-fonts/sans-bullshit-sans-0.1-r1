@@ -2,12 +2,12 @@ BDEPEND=X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
 DEFINED_PHASES=install postinst postrm setup unpack
 DESCRIPTION=A media-fonts/droid based font with buzzword censorship
 EAPI=7
-HOMEPAGE=http://sansbullshitsans.com
+HOMEPAGE=https://www.sansbullshitsans.com/
 INHERIT=font
 IUSE=X
 KEYWORDS=~*
 LICENSE=Apache-2.0
 SLOT=0
-SRC_URI=http://pixelambacht.nl/downloads/SansBullshitSans.ttf
+SRC_URI=https://pixelambacht.nl/downloads/SansBullshitSans.ttf
 _eclasses_=font	0667878c2b594871023dd1833d05996f
-_md5_=50f138338af88fb4bc76bfe99291e591
+_md5_=51b80591afa594eb8295cc6b9c051067
