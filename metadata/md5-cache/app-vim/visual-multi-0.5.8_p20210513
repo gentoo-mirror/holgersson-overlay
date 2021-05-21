@@ -1,0 +1,15 @@
+DEFINED_PHASES=install postinst postrm
+DEPEND=|| ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
+DESCRIPTION=vim plugin: Multiple cursors plugin for vim/neovim
+EAPI=7
+HOMEPAGE=https://github.com/mg979/vim-visual-multi
+INHERIT=vim-plugin
+IUSE=test
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=|| ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/mg979/vim-visual-multi/archive/17fed1b0471e224c59b9ae1b8a3cbeea570dd14b.tar.gz -> visual-multi-0.5.8_p20210513.tar.gz
+_eclasses_=vim-doc	dd0828b15877b2a09c07f4719e45891f	vim-plugin	93be71a1efbbf62981fcd40ee0db6e3f
+_md5_=6d95006419766a572a9171fe866776de
