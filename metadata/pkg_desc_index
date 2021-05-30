@@ -2,15 +2,15 @@ app-crypt/archlinux-keyring 20210110: GnuPG keyring of Archlinux developer keys
 app-crypt/sirikali 1.4.8: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
 app-emulation/nemu 2.6.0_p20210519: ncurses interface for QEMU
 app-emulation/podman-compose 0.1.5_p20210518: Run docker-compose files without root with podman
-app-vim/python-mode 0.13.0-r2: vim plugin: Turn vim into a python IDE
+app-vim/python-mode 0.13.0_p20210508: vim plugin: Turn vim into a python IDE
 app-vim/riv 0.793_p20200409 9999: vim plugin: Take Notes in rst
 app-vim/vim-obsession 1.0_p20210322: vim plugin: mksession automation tool
 app-vim/vim-redacted 0.2_p20191215: vim plugin: Redact text
 app-vim/vimwiki 2.5: vim plugin: Personal Wiki
-app-vim/visual-multi 0.5.8_p20210513: vim plugin: Multiple cursors plugin for vim/neovim
+app-vim/visual-multi 0.5.8_p20210527: vim plugin: Multiple cursors plugin for vim/neovim
 dev-libs/olm 3.2.3: Implementation of the olm and megolm cryptographic ratchets
 dev-python/control 0.9.0: Python Control Systems Library
-dev-python/hdf5storage 0.1.17: Python library for using HDF5 formatted files
+dev-python/hdf5storage 0.1.18: Python library for using HDF5 formatted files
 dev-python/multi_key_dict 2.0.3-r1: Multi key dictionary implementation
 dev-python/python-nmap 0.6.4: A Python library which helps in using the nmap port scanner
 dev-python/soundfile 0.10.3_p20201201: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
@@ -18,7 +18,7 @@ dev-python/uliengineering 0.3.6: Computational tools for electronics engineering
 games-puzzle/osmos 1.6.1-r3: Play as a single-celled organism absorbing others
 media-fonts/sans-bullshit-sans 0.1-r1: A media-fonts/droid based font with buzzword censorship
 media-sound/ffmpeg-normalize 1.22.1: Utility for batch-normalizing audio using ffmpeg
-media-sound/pulseaudio 14.2_p20210423: A networked sound server with an advanced plugin system
+media-sound/pulseaudio 14.99.1: A networked sound server with an advanced plugin system
 net-im/gomuks 0.2.3_p20210429: A terminal based Matrix client written in Go
 net-im/qtox 1.17.3_p20210503: Most feature-rich GUI for net-libs/tox using Qt5
 net-im/toot 0.27.0-r1: CLI/TUI mastodon client written in python
@@ -27,6 +27,6 @@ net-misc/fb-client 2.1.1-r1 9999: Client for paste.xinu.at
 net-nds/ldapcherry 1.1.1_p20200520-r1: LDAP web UI written in python
 net-news/canto-curses 0.9.9-r1: The ncurses client for canto-daemon
 net-news/canto-daemon 0.9.8: Daemon part of Canto-NG RSS reader
-sys-apps/pacman 5.2.2-r1: Archlinux's binary package manager
+sys-apps/pacman 5.2.2-r1 6.0.0: Archlinux's binary package manager
 sys-apps/pacman-mirrorlist 20210509: Repository list for Archlinux's binary package manager
 sys-fs/gocryptfs 1.8.0: Encrypted overlay filesystem written in Go
