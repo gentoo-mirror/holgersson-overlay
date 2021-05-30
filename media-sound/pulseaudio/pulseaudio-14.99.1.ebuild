@@ -6,9 +6,9 @@ EAPI=7
 inherit meson bash-completion-r1 flag-o-matic gnome2-utils linux-info optfeature systemd toolchain-funcs udev multilib-minimal
 
 # When COMMIT is defined, this ebuild turns from a release into a snapshot ebuild:
-COMMIT="d21d0d89a55af491bfc7b9f3a142554a4d7ec8be"
+#COMMIT="d21d0d89a55af491bfc7b9f3a142554a4d7ec8be"
 # When COMMIT is defined, this enables a work-around for missing .tarball-version file:
-_SNAPSHOT_FIX_GITVERSION=1
+#_SNAPSHOT_FIX_GITVERSION=1
 
 DESCRIPTION="A networked sound server with an advanced plugin system"
 HOMEPAGE="https://www.freedesktop.org/wiki/Software/PulseAudio/"
@@ -35,13 +35,12 @@ SLOT="0"
 
 # +alsa-plugin as discussed in bug #519530
 # TODO: Deal with bluez5-gstreamer
-# WARNING: for oss and tcpd support, a snapshot is needed (or wait for 15.0 to come out)
 # NOTE: Add tdb IUSE?
-# TODO: Find out why webrtc-aec is always enabled - there's already the always available speexdsp-aec
+# TODO: Find out why webrtc-aec is + prefixed - there's already the always available speexdsp-aec
 # NOTE: The current ebuild sets +X almost certainly just for the pulseaudio.desktop file
-IUSE="+alsa +alsa-plugin +asyncns bluetooth dbus +daemon doc equalizer +gdbm gstreamer gnome +glib
-gtk ipv6 jack lirc native-headset ofono-headset +orc oss selinux sox ssl systemd system-wide tcpd
-test +udev +webrtc-aec +X zeroconf"
+IUSE="+alsa +alsa-plugin +asyncns bluetooth dbus +daemon doc elogind equalizer +gdbm gstreamer
+gnome +glib gtk ipv6 jack lirc native-headset ofono-headset +orc oss selinux sox ssl systemd
+system-wide tcpd test +udev +webrtc-aec +X zeroconf"
 
 RESTRICT="!test? ( test )"
 
@@ -51,6 +50,7 @@ RESTRICT="!test? ( test )"
 REQUIRED_USE="
 	alsa-plugin? ( alsa )
 	bluetooth? ( dbus )
+	daemon? ( ?? ( elogind systemd ) )
 	!daemon? (
 		!alsa
 		!alsa-plugin
@@ -63,6 +63,7 @@ REQUIRED_USE="
 		!native-headset
 		!ofono-headset
 		!orc
+		!oss
 		!sox
 		!ssl
 		!system-wide
@@ -80,8 +81,7 @@ REQUIRED_USE="
 # libpcre needed in some cases, bug #472228 # TODO: Read it
 RDEPEND="
 	|| (
-		elibc_glibc? ( virtual/libc )
-		elibc_uclibc? ( virtual/libc )
+		virtual/libc
 		dev-libs/libpcre
 	)
 	>=media-libs/libsndfile-1.0.20[${MULTILIB_USEDEP}]
@@ -95,19 +95,19 @@ RDEPEND="
 		)
 	)
 	>=sys-libs/libcap-2.22-r2
-	alsa? ( >=media-libs/alsa-lib-1.0.19 )
+	alsa? ( >=media-libs/alsa-lib-1.0.24 )
 	glib? ( >=dev-libs/glib-2.26.0:2[${MULTILIB_USEDEP}] )
 	zeroconf? ( >=net-dns/avahi-0.6.12[dbus] )
 	jack? ( virtual/jack )
 	tcpd? ( sys-apps/tcp-wrappers[${MULTILIB_USEDEP}] )
 	lirc? ( app-misc/lirc )
-	dbus? ( >=sys-apps/dbus-1.0.0[${MULTILIB_USEDEP}] )
+	dbus? ( >=sys-apps/dbus-1.4.12[${MULTILIB_USEDEP}] )
 	gtk? ( x11-libs/gtk+:3 )
 	bluetooth? (
 		>=net-wireless/bluez-5
 		media-libs/sbc
 	)
-	asyncns? ( net-libs/libasyncns[${MULTILIB_USEDEP}] )
+	asyncns? ( >=net-libs/libasyncns-0.1[${MULTILIB_USEDEP}] )
 	udev? ( >=virtual/udev-143[hwdb(+)] )
 	equalizer? (
 		sci-libs/fftw:3.0
@@ -115,24 +115,28 @@ RDEPEND="
 	ofono-headset? ( >=net-misc/ofono-1.13 )
 	orc? ( >=dev-lang/orc-0.4.15 )
 	sox? ( >=media-libs/soxr-0.1.1 )
-	ssl? ( dev-libs/openssl:0= )
+	ssl? ( dev-libs/openssl:= )
 	media-libs/speexdsp[${MULTILIB_USEDEP}]
 	gdbm? ( sys-libs/gdbm:= )
 	webrtc-aec? ( >=media-libs/webrtc-audio-processing-0.2 )
-	systemd? ( sys-apps/systemd:0=[${MULTILIB_USEDEP}] )
-	!systemd? ( sys-auth/elogind )
-	daemon? ( dev-libs/libltdl:0[${MULTILIB_USEDEP}] )
+	elogind? ( sys-auth/elogind )
+	systemd? ( sys-apps/systemd:=[${MULTILIB_USEDEP}] )
+	daemon? (
+		dev-libs/libltdl[${MULTILIB_USEDEP}]
+		sys-kernel/linux-headers
+	)
 	selinux? ( sec-policy/selinux-pulseaudio )
 	gstreamer? (
 		media-libs/gst-plugins-base
-		media-libs/gstreamer
+		>=media-libs/gstreamer-1.14
 	)
-" # libltdl is a valid RDEPEND, libltdl.so is used for native abi in pulsecore and daemon
+" # Multilib libltdl is used during building but final binaries only link against native libltdl
 
+# This is not a mistake, the build system needs multilib libltdl to function
 DEPEND="${RDEPEND}
 	X? ( x11-base/xorg-proto )
 	dev-libs/libatomic_ops
-	dev-libs/libltdl:0[${MULTILIB_USEDEP}]
+	dev-libs/libltdl[${MULTILIB_USEDEP}]
 "
 # This is a PDEPEND to avoid a circular dep
 # TODO: Verify that alsa-plugins actually needs matching ${MULTILIB_USEDEP}
@@ -146,9 +150,9 @@ RDEPEND="${RDEPEND}
 	system-wide? (
 		alsa? ( media-sound/alsa-utils )
 		acct-user/pulse
+		acct-group/audio
 		acct-group/pulse-access
 	)
-	acct-group/audio
 "
 
 BDEPEND="
@@ -158,32 +162,33 @@ BDEPEND="
 	test? ( >=dev-libs/check-0.9.10 )
 	sys-devel/gettext
 	sys-devel/m4
+	virtual/libiconv
+	virtual/libintl
 	virtual/pkgconfig
 "
 
-# BUG: work-around for a weird bug
-#DOCS=( NEWS README ) # todo is useless to install
-
-#PATCHES=()
+DOCS=( NEWS README ) # todo is useless to install
 
 pkg_pretend() {
-	CONFIG_CHECK="~HIGH_RES_TIMERS"
-	WARNING_HIGH_RES_TIMERS="CONFIG_HIGH_RES_TIMERS:\tis not set (required for enabling timer-based scheduling in pulseaudio)\n"
-	check_extra_config
+	if use daemon; then
+		CONFIG_CHECK="~HIGH_RES_TIMERS"
+		WARNING_HIGH_RES_TIMERS="CONFIG_HIGH_RES_TIMERS:\tis not set (required for enabling timer-based scheduling in pulseaudio)\n"
+		check_extra_config
 
-	if linux_config_exists; then
-		local snd_hda_prealloc_size=$(linux_chkconfig_string SND_HDA_PREALLOC_SIZE)
-		if [[ -n "${snd_hda_prealloc_size}" ]] && [[ "${snd_hda_prealloc_size}" -lt 2048 ]]; then
-			ewarn "A pre-allocated buffer-size of 2048 (kB) or higher is recommended for the"
-			ewarn "HD-audio driver when using timer-based scheduling!"
-			ewarn "CONFIG_SND_HDA_PREALLOC_SIZE=${snd_hda_prealloc_size}"
+		if linux_config_exists; then
+			local snd_hda_prealloc_size=$(linux_chkconfig_string SND_HDA_PREALLOC_SIZE)
+			if [[ -n "${snd_hda_prealloc_size}" && "${snd_hda_prealloc_size}" -lt 2048 ]]; then
+				elog "For best experience with HDA devices set the pre-allocated"
+				elog "sound buffer to at least 2048 kB. The current value is:"
+				elog "\tCONFIG_SND_HDA_PREALLOC_SIZE=${snd_hda_prealloc_size}"
+			fi
 		fi
 	fi
 }
 
 pkg_setup() {
 	linux-info_pkg_setup
-	gnome2_environment_reset # bug 543364
+	gnome2_environment_reset # bug 543364 # TODO: read it
 }
 
 src_prepare() {
@@ -191,23 +196,25 @@ src_prepare() {
 
 	if [[ -n ${COMMIT} ]]; then
 		# This file really should be upstream's responsibility but what can you do other than hack
-		# together a work-around for an upstream's tarball generator, lacking required integration?
-		if [[ -n ${_SNAPSHOT_FIX_GITVERSION} ]] && [[ ${_SNAPSHOT_FIX_GITVERSION} -ge 1 ]]; then
+		# together a work-around for an upstream's tarball generator lacking required integration?
+		if [[ -n ${_SNAPSHOT_FIX_GITVERSION} && ${_SNAPSHOT_FIX_GITVERSION} -ge 1 ]]; then
 			echo ${PV%_*}-${COMMIT:0:8} > .tarball-version
 		fi
 	fi
-
-	# Skip test that cannot work with sandbox, bug 501846
-	# Hopefully gone for good but kept for now as a reference in the off chance they do pop back up
-	#sed -i -e '/lock-autospawn-test /d' src/Makefile.am || die
-	#sed -i -e 's/lock-autospawn-test$(EXEEXT) //' src/Makefile.in || die
 }
 
-pa_meson_multilib_native_use_enable() {
-	echo "-D${2:-${1}}=$(multilib_native_usex ${1} true false)"
+meson_native_true() {
+	if multilib_is_native_abi; then
+		echo "-D${1}=true"
+	else
+		echo "-D${1}=false"
+	fi
 }
 
-pa_meson_multilib_native_use_feature() {
+meson_native_feature() {
+	# Example usage: $(meson_native_feature foo bar) -> -Dbar=enabled if foo is true
+	# and the native ABI is being configured, disabled otherwise; if bar is omitted,
+	# then bar is replaced with foo e.g. $(meson_native_feature foo) -> -Dfoo=enabled.
 	echo "-D${2:-${1}}=$(multilib_native_usex ${1} enabled disabled)"
 }
 
@@ -215,31 +222,31 @@ multilib_src_configure() {
 	local emesonargs=(
 		-Dadrian-aec=false # Not packaged?
 		--localstatedir="${EPREFIX}"/var
-		-Dmodlibexecdir="${EPREFIX}"/usr/"$(get_libdir)/${P}"
+		-Dmodlibexecdir="${EPREFIX}/usr/$(get_libdir)/${P}"
 #		-Dsystemduserunitdir=$(systemd_get_userunitdir)
 		-Dudevrulesdir="$(get_udevdir)"/rules.d
-		-Dbashcompletiondir="$(get_bashcompdir)"
-		$(pa_meson_multilib_native_use_feature alsa)
-		$(pa_meson_multilib_native_use_enable bluetooth bluez5)
-		$(pa_meson_multilib_native_use_enable daemon)
-		$(pa_meson_multilib_native_use_enable native-headset bluez5-native-headset)
-		$(pa_meson_multilib_native_use_enable ofono-headset bluez5-ofono-headset)
-		$(pa_meson_multilib_native_use_feature glib gsettings) # Supposedly correct?
-		$(pa_meson_multilib_native_use_feature gstreamer)
-		$(pa_meson_multilib_native_use_feature gtk)
-		$(pa_meson_multilib_native_use_feature jack)
+		-Dbashcompletiondir="$(get_bashcompdir)" # Alternatively DEPEND on app-shells/bash-completion for pkg-config to provide the value
+		$(meson_native_feature alsa)
+		$(meson_native_true bluetooth bluez5)
+		$(meson_native_true daemon)
+		$(meson_native_true native-headset bluez5-native-headset)
+		$(meson_native_true ofono-headset bluez5-ofono-headset)
+		$(meson_native_feature glib gsettings) # Supposedly correct?
+		$(meson_native_feature gstreamer)
+		$(meson_native_feature gtk)
+		$(meson_native_feature jack)
 		-Dsamplerate=disabled # Matches upstream
-		$(pa_meson_multilib_native_use_feature lirc)
-		$(pa_meson_multilib_native_use_feature orc)
-		$(pa_meson_multilib_native_use_feature oss oss-output)
-		$(pa_meson_multilib_native_use_feature ssl openssl)
+		$(meson_native_feature lirc)
+		$(meson_native_feature orc)
+		$(meson_native_feature oss oss-output)
+		$(meson_native_feature ssl openssl)
 		# tests involve random modules, so just do them for the native # TODO: tests should run always
-		$(pa_meson_multilib_native_use_enable test tests)
-		$(pa_meson_multilib_native_use_feature udev)
-		$(pa_meson_multilib_native_use_feature webrtc-aec)
-		$(pa_meson_multilib_native_use_feature zeroconf avahi)
-		$(pa_meson_multilib_native_use_feature equalizer fftw)
-		$(pa_meson_multilib_native_use_feature sox soxr)
+		$(meson_native_true test tests)
+		$(meson_native_feature udev)
+		$(meson_native_feature webrtc-aec)
+		$(meson_native_feature zeroconf avahi)
+		$(meson_native_feature equalizer fftw)
+		$(meson_native_feature sox soxr)
 		-Ddatabase=$(multilib_native_usex gdbm gdbm simple) # TODO: tdb is also an option
 		$(meson_use gnome stream-restore-clear-old-devices) # TODO: Get ACK'ed on this
 		$(meson_feature glib)
@@ -247,6 +254,7 @@ multilib_src_configure() {
 		#$(meson_use cpu_flags_arm_neon neon-opt)
 		$(meson_feature tcpd tcpwrap) # TODO: system-wide specific?
 		$(meson_feature dbus)
+		$(meson_feature elogind)
 		$(meson_feature X x11)
 		$(meson_feature systemd)
 		$(meson_use ipv6)
@@ -279,27 +287,25 @@ multilib_src_test() {
 	# For on-native ABIs we build only the client libraries, which means that upstream disables
 	# almost all tests. On the upside the few remaining ones should work, so we can at least noew
 	# run the src_test phase for non-native ABIs, too.
-	#if multilib_is_native_abi; then
 	meson_src_test
-	#fi
 }
 
 multilib_src_install() {
-	meson_src_install
-
-	if multilib_is_native_abi; then
-		if use doc; then
-			# TODO: check it's installing into the right place
-			docinto html
-			dodoc -r doxygen/html/
-		fi
-	else
-		# remove foreign abi modules
-		rm -rf "${ED}"/usr/$(get_libdir)/pulse-*/ || die
-	fi
+	# The files referenced in the DOCS array do not exist in the multilib source directory,
+	# therefore clear the variable when calling the function that will access it.
+	DOCS= meson_src_install
 }
 
 multilib_src_install_all() {
+	# Now we can install the DOCS. ;)
+	einstalldocs
+
+	if use doc; then
+		# TODO: check it's installing into the right place
+		docinto html
+		dodoc -r doxygen/html/
+	fi
+
 	if use system-wide; then
 		newconfd "${FILESDIR}"/pulseaudio.conf.d pulseaudio
 

@@ -6,7 +6,7 @@ EAPI="7"
 PYTHON_COMPAT=( python3_{8..9} )
 inherit python-r1 vim-plugin
 
-COMMIT_ID="295e84d9dd7f4887f8a5635e9dfe88dfeabaf00c"
+COMMIT_ID="56a4b3621e2d4ce5f5f9f200b860cb9d681d8f8c"
 
 DESCRIPTION="vim plugin: Turn vim into a python IDE"
 HOMEPAGE="https://www.vim.org/scripts/script.php?script_id=3770 https://github.com/python-mode/python-mode"
@@ -48,6 +48,13 @@ RDEPEND="
 	dev-python/ropemode[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]
 	dev-python/snowballstemmer[${PYTHON_USEDEP}]
+	|| (
+		app-editors/vim[python,${PYTHON_USEDEP}]
+		(
+			app-editors/neovim
+			dev-python/pynvim[${PYTHON_USEDEP}]
+		)
+	)
 "
 
 src_install() {
