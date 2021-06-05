@@ -14,8 +14,10 @@ HOMEPAGE="https://nuetzlich.net/gocryptfs/ https://github.com/rfjakob/gocryptfs/
 EGO_SUM=(
 	"github.com/davecgh/go-spew v1.1.0"
 	"github.com/davecgh/go-spew v1.1.0/go.mod"
-	"github.com/hanwen/go-fuse v1.0.1-0.20190319092520-161a16484456"
-	"github.com/hanwen/go-fuse v1.0.1-0.20190319092520-161a16484456/go.mod"
+	"github.com/hanwen/go-fuse v1.0.0"
+	"github.com/hanwen/go-fuse v1.0.0/go.mod"
+	"github.com/hanwen/go-fuse/v2 v2.1.1-0.20210508151621-62c5aa1919a7"
+	"github.com/hanwen/go-fuse/v2 v2.1.1-0.20210508151621-62c5aa1919a7/go.mod"
 	"github.com/jacobsa/crypto v0.0.0-20190317225127-9f44e2d11115"
 	"github.com/jacobsa/crypto v0.0.0-20190317225127-9f44e2d11115/go.mod"
 	"github.com/jacobsa/oglematchers v0.0.0-20150720000706-141901ea67cd"
@@ -26,6 +28,8 @@ EGO_SUM=(
 	"github.com/jacobsa/ogletest v0.0.0-20170503003838-80d50a735a11/go.mod"
 	"github.com/jacobsa/reqtrace v0.0.0-20150505043853-245c9e0234cb"
 	"github.com/jacobsa/reqtrace v0.0.0-20150505043853-245c9e0234cb/go.mod"
+	"github.com/kylelemons/godebug v0.0.0-20170820004349-d65d576e9348"
+	"github.com/kylelemons/godebug v0.0.0-20170820004349-d65d576e9348/go.mod"
 	"github.com/pkg/xattr v0.4.1"
 	"github.com/pkg/xattr v0.4.1/go.mod"
 	"github.com/pmezard/go-difflib v1.0.0"
@@ -34,7 +38,6 @@ EGO_SUM=(
 	"github.com/rfjakob/eme v1.1.1/go.mod"
 	"github.com/sabhiram/go-gitignore v0.0.0-20180611051255-d3107576ba94"
 	"github.com/sabhiram/go-gitignore v0.0.0-20180611051255-d3107576ba94/go.mod"
-	"github.com/stretchr/objx v0.1.0"
 	"github.com/stretchr/objx v0.1.0/go.mod"
 	"github.com/stretchr/testify v1.5.1"
 	"github.com/stretchr/testify v1.5.1/go.mod"
@@ -44,13 +47,11 @@ EGO_SUM=(
 	"golang.org/x/net v0.0.0-20190404232315-eb5bcb51f2a3/go.mod"
 	"golang.org/x/net v0.0.0-20200324143707-d3edc9973b7e"
 	"golang.org/x/net v0.0.0-20200324143707-d3edc9973b7e/go.mod"
-	"golang.org/x/sync v0.0.0-20200317015054-43a5402ce75a"
-	"golang.org/x/sync v0.0.0-20200317015054-43a5402ce75a/go.mod"
+	"golang.org/x/sync v0.0.0-20201207232520-09787c993a3a/go.mod"
 	"golang.org/x/sys v0.0.0-20180830151530-49385e6e1522/go.mod"
 	"golang.org/x/sys v0.0.0-20181021155630-eda9bb28ed51/go.mod"
 	"golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a/go.mod"
 	"golang.org/x/sys v0.0.0-20190412213103-97732733099d/go.mod"
-	"golang.org/x/sys v0.0.0-20200323222414-85ca7c5b95cd"
 	"golang.org/x/sys v0.0.0-20200323222414-85ca7c5b95cd/go.mod"
 	"golang.org/x/sys v0.0.0-20200501145240-bc7a7d42d5c3"
 	"golang.org/x/sys v0.0.0-20200501145240-bc7a7d42d5c3/go.mod"
@@ -70,16 +71,16 @@ else
 		https://${EGO_PN}/releases/download/v${PV}/${PN}_v${PV}_src-deps.tar.gz -> ${P}.tar.gz
 		${EGO_SUM_SRC_URI}
 	"
-	KEYWORDS="~amd64"
 fi
 
 # in detail:
 # BSD           vendor/golang.org/x/sys/LICENSE
 # BSD           vendor/golang.org/x/crypto/LICENSE
-# BSD           vendor/golang.org/x/sync/LICENSE
-# BSD:          vendor/github.com/hanwen/go-fuse/LICENSE
-# BSD-2:        vendor/github.com/pkg/xattr/LICENSE
-# Apache-2.0:   vendor/github.com/rfjakob/eme/LICENSE
+# BSD           vendor/github.com/hanwen/go-fuse/v2/LICENSE
+# Apache-2.0    vendor/github.com/jacobsa/crypto/LICENSE
+# BSD-2         vendor/github.com/pkg/xattr/LICENSE
+# MIT           vendor/github.com/rfjakob/eme/LICENSE
+# MIT           vendor/github.com/sabhiram/go-gitignore/LICENSE
 LICENSE="Apache-2.0 BSD BSD-2 MIT"
 
 SLOT="0"
@@ -94,6 +95,15 @@ RDEPEND="
 "
 
 S="${WORKDIR}/${PN}_v${PV}_src-deps"
+
+# We omit debug symbols which looks like pre-stripping to portage.
+QA_PRESTRIPPED="
+	/usr/bin/gocryptfs-atomicrename
+	/usr/bin/gocryptfs-findholes
+	/usr/bin/gocryptfs-statfs
+	/usr/bin/gocryptfs-xray
+	/usr/bin/gocryptfs
+"
 
 src_compile() {
 	export GOPATH="${G}"
@@ -114,18 +124,27 @@ src_compile() {
 		-tags "$(usex !ssl 'without_openssl' 'none')"
 	)
 	go build "${mygoargs[@]}" || die
-	go build "${mygoargs[@]}" gocryptfs-xray/xray_main.go || die
+
+	# loop over all helper tools
+	for dir in gocryptfs-xray contrib/statfs contrib/findholes contrib/atomicrename; do
+		cd "${S}/${dir}" || die
+		go build "${mygoargs[@]}" || die
+	done
+	cd "${S}"
 
 	if use man; then
 		go-md2man -in Documentation/MANPAGE.md -out gocryptfs.1 || die
-		go-md2man -in Documentation/MANPAGE-XRAY.md -out gocryptfs-xray.1 || die
 		go-md2man -in Documentation/MANPAGE-STATFS.md -out gocryptfs-statfs.2 || die
+		go-md2man -in Documentation/MANPAGE-XRAY.md -out gocryptfs-xray.1 || die
 	fi
 }
 
 src_install() {
 	dobin gocryptfs
-	newbin xray_main gocryptfs-xray
+	dobin gocryptfs-xray/gocryptfs-xray
+	newbin contrib/statfs/statfs "${PN}-statfs"
+	newbin contrib/findholes/findholes "${PN}-findholes"
+	newbin contrib/atomicrename/atomicrename "${PN}-atomicrename"
 
 	if use man; then
 		doman gocryptfs.1
