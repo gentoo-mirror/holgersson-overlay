@@ -29,4 +29,4 @@ net-news/canto-curses 0.9.9-r1: The ncurses client for canto-daemon
 net-news/canto-daemon 0.9.8: Daemon part of Canto-NG RSS reader
 sys-apps/pacman 5.2.2-r1 6.0.0: Archlinux's binary package manager
 sys-apps/pacman-mirrorlist 20210509: Repository list for Archlinux's binary package manager
-sys-fs/gocryptfs 2.0: Encrypted overlay filesystem written in Go
+sys-fs/gocryptfs 2.0.1: Encrypted overlay filesystem written in Go
