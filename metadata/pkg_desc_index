@@ -1,13 +1,14 @@
-app-crypt/archlinux-keyring 20210110: GnuPG keyring of Archlinux developer keys
+app-crypt/archlinux-keyring 20210616: GnuPG keyring of Archlinux developer keys
 app-crypt/sirikali 1.4.8: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
 app-emulation/nemu 2.6.0_p20210519: ncurses interface for QEMU
 app-emulation/podman-compose 0.1.5_p20210518: Run docker-compose files without root with podman
-app-vim/python-mode 0.13.0_p20210508: vim plugin: Turn vim into a python IDE
+app-vim/languageclient-neovim 0.1.161: neovim plugin: LSP client written in Rust
+app-vim/python-mode 0.13.0_p20210508-r1: vim plugin: Turn vim into a python IDE
 app-vim/riv 0.793_p20200409 9999: vim plugin: Take Notes in rst
 app-vim/vim-obsession 1.0_p20210322: vim plugin: mksession automation tool
 app-vim/vim-redacted 0.2_p20191215: vim plugin: Redact text
 app-vim/vimwiki 2.5: vim plugin: Personal Wiki
-app-vim/visual-multi 0.5.8_p20210527: vim plugin: Multiple cursors plugin for vim/neovim
+app-vim/visual-multi 0.5.8_p20210611: vim plugin: Multiple cursors plugin for vim/neovim
 dev-libs/olm 3.2.3: Implementation of the olm and megolm cryptographic ratchets
 dev-python/control 0.9.0: Python Control Systems Library
 dev-python/hdf5storage 0.1.18: Python library for using HDF5 formatted files

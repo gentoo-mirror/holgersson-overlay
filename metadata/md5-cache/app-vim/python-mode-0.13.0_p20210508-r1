@@ -13,4 +13,4 @@ RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/python-mode/python-mode/archive/56a4b3621e2d4ce5f5f9f200b860cb9d681d8f8c.tar.gz -> python-mode-0.13.0_p20210508.tar.gz
 _eclasses_=multibuild	6b3d5ee849dafe6cdfd7b859c211fb01	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	multilib	ebdbaed22e873a5abe6205f41349b479	python-utils-r1	6e84b7d3d8d0bb1ee12774f4a66909e2	python-r1	26e4ad0a4190b14f70973dc253e86535	vim-doc	dd0828b15877b2a09c07f4719e45891f	vim-plugin	93be71a1efbbf62981fcd40ee0db6e3f
-_md5_=bc3d541f4b59fe75ca4db06a0b6d9091
+_md5_=1c64b2c4abc0fa733f6465cce20698bb
