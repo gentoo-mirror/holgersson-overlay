@@ -5,7 +5,7 @@ EAPI="7"
 
 inherit vim-plugin
 
-COMMIT_ID="8041a909fc3f740e9d110dd2e95980ff4645785b"
+COMMIT_ID="8566a3137bd51ca2f6d12a06dbc70ce831dd2d1c"
 
 DESCRIPTION="vim plugin:  Multiple cursors plugin for vim/neovim"
 HOMEPAGE="https://github.com/mg979/vim-visual-multi"
@@ -20,13 +20,12 @@ else
 	if [[ ${PV} == *_p* ]]; then
 		SRC_URI="https://github.com/mg979/vim-${PN}/archive/${COMMIT_ID}.tar.gz -> ${P}.tar.gz"
 		S="${WORKDIR}/vim-${PN}-${COMMIT_ID}"
-		KEYWORDS="~amd64 ~x86"
 	else
 		SRC_URI="https://github.com/tpope/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 		S="${WORKDIR}/vim-${P}"
-		KEYWORDS="~amd64 ~x86"
 	fi
 fi
+KEYWORDS="~amd64 ~x86"
 
 DOCS=( README.md )
 

@@ -1,13 +1,12 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 DESCRIPTION="GnuPG keyring of Archlinux developer keys"
-HOMEPAGE="https://git.archlinux.org/archlinux-keyring.git"
+HOMEPAGE="https://gitlab.archlinux.org/archlinux/archlinux-keyring"
 SRC_URI="https://sources.archlinux.org/other/${PN}/${P}.tar.gz"
-
-LICENSE="GPL-2" # GPL?
+LICENSE="GPL-2" # "GPL" for the Arch linux package
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
