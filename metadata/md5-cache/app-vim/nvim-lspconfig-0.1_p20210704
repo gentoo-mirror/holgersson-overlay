@@ -13,4 +13,4 @@ RESTRICT=test
 SLOT=0
 SRC_URI=https://github.com/neovim/nvim-lspconfig/archive/5fe1b132534041e889278f081ff10c02b09c096f.tar.gz -> nvim-lspconfig-0.1_p20210704.tar.gz
 _eclasses_=vim-doc	e063cddf18e5d2f2cfb21388252579ec	vim-plugin	93be71a1efbbf62981fcd40ee0db6e3f
-_md5_=93b57778a9cb14659e7caf8b5948d7ff
+_md5_=8b5dc74dc58d5f9b59afcb21dfbfbe73
