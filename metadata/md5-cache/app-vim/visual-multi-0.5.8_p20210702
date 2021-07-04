@@ -10,6 +10,6 @@ LICENSE=MIT
 RDEPEND=|| ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
 RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=https://github.com/mg979/vim-visual-multi/archive/8566a3137bd51ca2f6d12a06dbc70ce831dd2d1c.tar.gz -> visual-multi-0.5.8_p20210611.tar.gz
+SRC_URI=https://github.com/mg979/vim-visual-multi/archive/f994695813ebaecc9e37c7ea216c65d9cd659767.tar.gz -> visual-multi-0.5.8_p20210702.tar.gz
 _eclasses_=vim-doc	e063cddf18e5d2f2cfb21388252579ec	vim-plugin	93be71a1efbbf62981fcd40ee0db6e3f
-_md5_=e5c17102cff9007f4e98554533e0d59a
+_md5_=c7144a6819ee2e79582d8fd9c5443e95
