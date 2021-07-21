@@ -11,5 +11,5 @@ RDEPEND=|| ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/gu-fan/riv.vim/archive/e26c3e8dce4c1332e802cde84f83e61ec8a13986.tar.gz -> riv-0.793_p20200409.tar.gz
-_eclasses_=vim-doc	e063cddf18e5d2f2cfb21388252579ec	vim-plugin	93be71a1efbbf62981fcd40ee0db6e3f
+_eclasses_=vim-doc	e063cddf18e5d2f2cfb21388252579ec	vim-plugin	0dc43a0d19e9cf28116eff88ffd07748
 _md5_=e841c2675fb8aa1b3092a30f693e558e
