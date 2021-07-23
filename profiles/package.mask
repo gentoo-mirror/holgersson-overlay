@@ -4,14 +4,8 @@
 # author <email address> (LANG=C date -u +"%Y-%m-%d)
 # reason
 
-# Nils Freydank <holgersson@posteo.de> (2021-06-14)
-# Dropping canto after 2021-07-14. I migrated to net-news/newsboat and won't
-# maintain the package anymore.
-net-news/canto-curses
-net-news/canto-daemon
-
-# Nils Freydank <holgersson@posteo.de> (2021-06-30)
-# Dropping python-mode after 2021-07-14. I migrated to neovim plus LSP and won't
-# maintain the package anymore. As masking here doesn't really show up on the
-# users' end anyways I will just drop it together with the other packages.
-app-vim/python-mode
+# Nils Freydank <holgersson@posteo.de> (2021-07-23)
+# Remove ffmpeg-normalize after 2021-07-31.
+# I don't use it anymore and it needs ffmpeg-progress-yield which is
+# not packaged so far.
+media-sound/ffmpeg-normalize
