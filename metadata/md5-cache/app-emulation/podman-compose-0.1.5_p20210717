@@ -1,7 +1,7 @@
 BDEPEND=python_targets_python3_8? ( dev-lang/python:3.8 ) python_targets_python3_9? ( dev-lang/python:3.9 ) python_targets_python3_10? ( dev-lang/python:3.10 ) >=dev-lang/python-exec-2:=[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?] >=dev-python/setuptools-42.0.2[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
 DEFINED_PHASES=compile configure install prepare test
 DESCRIPTION=Run docker-compose files without root with podman
-EAPI=7
+EAPI=8
 HOMEPAGE=https://pypi.org/project/podman-compose/ https://github.com/containers/podman-compose
 INHERIT=distutils-r1
 IUSE=test python_targets_python3_8 python_targets_python3_9 python_targets_python3_10
@@ -11,6 +11,6 @@ RDEPEND=dev-python/pyyaml[python_targets_python3_8(-)?,python_targets_python3_9(
 REQUIRED_USE=|| ( python_targets_python3_8 python_targets_python3_9 python_targets_python3_10 )
 RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=https://github.com/containers/podman-compose/archive/d97a20d563a833e6087c4351798b28129cbc5e8b.tar.gz -> podman-compose-0.1.5_p20210623.tar.gz
-_eclasses_=multiprocessing	61c959fc55c15c00bbb1079d6a71370b	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	multibuild	05a584848db4901c97fcd94ae7cc3a97	eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	python-utils-r1	2f5967e7ced9abfa71ff7b0ea8d61b3a	python-r1	e20b80360497e6215aed0dd4ca7d6bad	distutils-r1	943c17c3afd0f811ad36a0b5c8dedba9
-_md5_=4d5eb5e43983a2883ebdce0642d146b0
+SRC_URI=https://github.com/containers/podman-compose/archive/3836094c642c82a2d712e5411895307322055429.tar.gz -> podman-compose-0.1.5_p20210717.tar.gz
+_eclasses_=multiprocessing	61c959fc55c15c00bbb1079d6a71370b	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	multibuild	05a584848db4901c97fcd94ae7cc3a97	python-utils-r1	2f5967e7ced9abfa71ff7b0ea8d61b3a	python-r1	e20b80360497e6215aed0dd4ca7d6bad	distutils-r1	943c17c3afd0f811ad36a0b5c8dedba9
+_md5_=3e7d06be88c7d509fb44ebf35b278bbf
