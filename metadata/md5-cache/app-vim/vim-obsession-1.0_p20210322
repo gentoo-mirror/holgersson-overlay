@@ -12,4 +12,4 @@ RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/tpope/vim-obsession/archive/82c9ac5e130c92a46e043dd9cd9e5b48d15e286d.tar.gz -> vim-obsession-1.0_p20210322.tar.gz
 _eclasses_=vim-doc	e063cddf18e5d2f2cfb21388252579ec	vim-plugin	a7b5f19bc94a311ca1cf7127c8b84c41
-_md5_=739ff3241849cff36c62c3feb0114976
+_md5_=460aa9f8960193bbc924e01d3e5552fe

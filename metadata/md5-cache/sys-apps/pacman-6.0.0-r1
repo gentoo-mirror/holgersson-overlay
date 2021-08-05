@@ -13,4 +13,4 @@ RESTRICT=test
 SLOT=0/10
 SRC_URI=https://sources.archlinux.org/other/pacman/pacman-6.0.0.tar.xz
 _eclasses_=multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	python-utils-r1	2f5967e7ced9abfa71ff7b0ea8d61b3a	meson	5bc3f1b890f90cc00cf1d1dddc10233e
-_md5_=d49a8c9adb7f8a7032a01650c51d53b0
+_md5_=61ed02371cb1115cba1aab97ddf1095c
