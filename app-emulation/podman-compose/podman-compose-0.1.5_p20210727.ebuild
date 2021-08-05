@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{8..10} )
 DISTUTILS_USE_SETUPTOOLS=rdepend
 inherit distutils-r1
 
-COMMIT_ID="3836094c642c82a2d712e5411895307322055429"
+COMMIT_ID="ff5b9f16632dcab4be6d0f666263f58ad668c105"
 
 DESCRIPTION="Run docker-compose files without root with podman"
 HOMEPAGE="https://pypi.org/project/podman-compose/ https://github.com/containers/podman-compose"
@@ -19,13 +19,12 @@ else
 	if [[ ${PV} == *_p* ]]; then
 		SRC_URI="https://github.com/containers/podman-compose/archive/${COMMIT_ID}.tar.gz -> ${P}.tar.gz"
 		S="${WORKDIR}/podman-compose-${COMMIT_ID}"
-		KEYWORDS="~amd64 ~x86"
 	else
 		SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
-		KEYWORDS="~amd64 ~x86"
 		S="${WORKDIR}/qTox-${PV}"
 	fi
 fi
+KEYWORDS="~amd64 ~x86"
 
 LICENSE="GPL-2"
 SLOT="0"

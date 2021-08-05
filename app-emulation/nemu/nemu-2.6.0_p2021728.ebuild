@@ -6,7 +6,7 @@ EAPI=7
 inherit cmake linux-info
 
 MY_PV="${PV/_rc/-RC}"
-COMMIT_ID="77ed2e0195cb210657ed796f5a58f3f03a6fc954"
+COMMIT_ID="806a9111b3abc446f58fbb19dd55fa55e93fe9cf"
 
 DESCRIPTION="ncurses interface for QEMU"
 HOMEPAGE="https://github.com/nemuTUI/nemu"
@@ -18,13 +18,12 @@ else
 	if [[ ${PV} == *_p* ]]; then
 		SRC_URI="https://github.com/nemuTUI/${PN}/archive/${COMMIT_ID}.tar.gz -> ${P}.tar.gz"
 		S="${WORKDIR}/${PN}-${COMMIT_ID}"
-		KEYWORDS="~amd64 ~x86"
 	else
 		SRC_URI="https://github.com/nemuTUI/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
-		KEYWORDS="~amd64 ~x86"
 		S="${WORKDIR}/$PN-${MY_PV}/"
 	fi
 fi
+KEYWORDS="~amd64 ~x86"
 
 LICENSE="BSD-2"
 SLOT="0"
@@ -33,7 +32,7 @@ IUSE="dbus network-map +ovf +savevm spice +vnc-client"
 RDEPEND="
 	app-emulation/qemu[vnc,virtfs,spice?]
 	dev-db/sqlite:3=
-	sys-libs/ncurses:0=[unicode]
+	>=sys-libs/ncurses-6.2_p20210619:0=
 	virtual/libusb:1
 	virtual/libudev:=
 	dbus? ( sys-apps/dbus )
