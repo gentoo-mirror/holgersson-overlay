@@ -26,4 +26,4 @@ net-misc/fb-client 2.1.1-r2 9999: Client for paste.xinu.at
 net-nds/ldapcherry 1.1.1_p20200520-r1: LDAP web UI written in python
 sys-apps/pacman 6.0.0-r1: Archlinux's binary package manager
 sys-apps/pacman-mirrorlist 20210509: Repository list for Archlinux's binary package manager
-sys-fs/gocryptfs 2.0.1-r1: Encrypted overlay filesystem written in Go
+sys-fs/gocryptfs 2.1: Encrypted overlay filesystem written in Go
