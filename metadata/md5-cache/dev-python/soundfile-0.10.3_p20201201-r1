@@ -14,4 +14,4 @@ RESTRICT=test
 SLOT=0
 SRC_URI=https://github.com/bastibe/python-soundfile/archive/744efb4b01abc72498a96b09115b42a4cabd85e4.tar.gz -> soundfile-0.10.3_p20201201.tar.gz
 _eclasses_=multiprocessing	61c959fc55c15c00bbb1079d6a71370b	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	multibuild	05a584848db4901c97fcd94ae7cc3a97	python-utils-r1	08d890890f70fe0096093016e55438d5	python-r1	e20b80360497e6215aed0dd4ca7d6bad	distutils-r1	e297e8afd355d60fb9d2d7b37b81214f
-_md5_=015e3f60b9f5986e5035b1f2a8236b45
+_md5_=e0b222f0ae8fb7f487dc2bbb2486e7de

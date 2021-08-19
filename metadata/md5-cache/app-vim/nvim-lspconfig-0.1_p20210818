@@ -11,6 +11,6 @@ LICENSE=Apache-2.0
 RDEPEND=|| ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
 RESTRICT=test
 SLOT=0
-SRC_URI=https://github.com/neovim/nvim-lspconfig/archive/4bcc485e2e6ccb4ed7bdd9f1e12c9c4ad6fe1f0e.tar.gz -> nvim-lspconfig-0.1_p20210801.tar.gz
+SRC_URI=https://github.com/neovim/nvim-lspconfig/archive/e2601bb4b8d125e3f96274fe57136004dce4c587.tar.gz -> nvim-lspconfig-0.1_p20210818.tar.gz
 _eclasses_=vim-doc	e063cddf18e5d2f2cfb21388252579ec	vim-plugin	a7b5f19bc94a311ca1cf7127c8b84c41
-_md5_=b3013216dea884eb0107ff6411017311
+_md5_=ea9d39a41ab40108eb5e970bfdb858f3
