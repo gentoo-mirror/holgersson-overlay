@@ -27,7 +27,7 @@ KEYWORDS="~amd64 ~x86"
 
 LICENSE="BSD-2"
 SLOT="0"
-IUSE="dbus network-map +ovf +savevm spice +vnc-client"
+IUSE="dbus network-map +ovf remote-control spice +vnc-client"
 
 RDEPEND="
 	app-emulation/qemu[vnc,virtfs,spice?]
@@ -41,7 +41,10 @@ RDEPEND="
 		dev-libs/libxml2:2
 		app-arch/libarchive
 	)
-	spice? ( app-emulation/virt-viewer )
+	remote-control? (
+		dev-libs/openssl:=
+	)
+	spice? ( app-emulation/virt-viewer[spice] )
 	vnc-client? ( net-misc/tigervnc )
 "
 DEPEND="${RDEPEND}"
@@ -63,17 +66,17 @@ pkg_pretend() {
 }
 
 src_configure() {
-	# -DNM_USE_UTF: Enable unicode unconditionally. We already
-	#                depended on ncurses[unicode].
-	# -DNM_WITH_QEMU: Do not embbed qemu.
+	# -DNM_WITH_NCURSES: Don't build the embbeded ncurses.
+	# -DNM_WITH_QEMU: Don't build the embbeded qemu.
 	local mycmakeargs=(
-		-DNM_SAVEVM_SNAPSHOTS=$(usex savevm)
-		-DNM_USE_UTF=on
+		-DNM_WITH_UNICODE_GLYPHS=on
+		-DNM_WITH_NCURSES=off
 		-DNM_WITH_DBUS=$(usex dbus)
 		-DNM_WITH_NETWORK_MAP=$(usex network-map)
 		-DNM_WITH_OVF_SUPPORT=$(usex ovf)
 		-DNM_WITH_QEMU=off
 		-DNM_WITH_SPICE=$(usex spice)
+		-DNM_WITH_REMOTE=$(usex remote-control)
 		-DNM_WITH_VNC_CLIENT=$(usex vnc-client)
 	)
 	cmake_src_configure
