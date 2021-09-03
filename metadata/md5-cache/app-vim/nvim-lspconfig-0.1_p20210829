@@ -13,5 +13,5 @@ REQUIRED_USE=^^ ( lua_single_target_luajit lua_single_target_lua5-1 lua_single_t
 RESTRICT=test
 SLOT=0
 SRC_URI=https://github.com/neovim/nvim-lspconfig/archive/0eccc1a0ebf909aecfa1ac238d940061162ae84f.tar.gz -> nvim-lspconfig-0.1_p20210829.tar.gz
-_eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	lua-utils	7b7cd623ac8b9dd4a7a6ee27219cada6	lua-single	ba92a0c9d413e015c6625cdb0b9aaf99	vim-doc	e063cddf18e5d2f2cfb21388252579ec	vim-plugin	a7b5f19bc94a311ca1cf7127c8b84c41
+_eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	4b66d835ec72e021e359bb81eacfe988	lua-utils	7b7cd623ac8b9dd4a7a6ee27219cada6	lua-single	ba92a0c9d413e015c6625cdb0b9aaf99	vim-doc	e063cddf18e5d2f2cfb21388252579ec	vim-plugin	a7b5f19bc94a311ca1cf7127c8b84c41
 _md5_=bb123e58470258f0c4c18b291fe7e4c6
