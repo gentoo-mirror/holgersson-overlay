@@ -1,6 +1,6 @@
 app-crypt/archlinux-keyring 20210902: GnuPG keyring of Archlinux developer keys
 app-crypt/sirikali 1.4.8-r1: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
-app-emulation/nemu 3.0.0: ncurses interface for QEMU
+app-emulation/nemu 3.0.0_p20210921: ncurses interface for QEMU
 app-emulation/podman-compose 0.1.5_p20210911: Run docker-compose files without root with podman
 app-misc/fff 2.2: Fucking Fast File-Manager (written in bash)
 app-misc/gomatrix 0.0.1_p20200420-r1: Connect to The Matrix and display it's data streams in your terminal
@@ -15,11 +15,11 @@ dev-python/control 0.9.0-r1: Python Control Systems Library
 dev-python/hdf5storage 0.1.18-r1: Python library for using HDF5 formatted files
 dev-python/multi_key_dict 2.0.3-r2: Multi key dictionary implementation
 dev-python/python-nmap 0.6.4-r1: A Python library which helps in using the nmap port scanner
-dev-python/soundfile 0.10.3_p20201201-r1: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
+dev-python/soundfile 0.10.3_p20210921: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
 dev-python/uliengineering 0.3.7: Computational tools for electronics engineering
 games-puzzle/osmos 1.6.1-r4: Play as a single-celled organism absorbing others
 media-fonts/sans-bullshit-sans 0.1-r2: A media-fonts/droid based font with buzzword censorship
-net-im/gomuks 0.2.3_p20210802: A terminal based Matrix client written in Go
+net-im/gomuks 0.2.4: A terminal based Matrix client written in Go
 net-im/qtox 1.17.3_p20210503: Most feature-rich GUI for net-libs/tox using Qt5
 net-mail/urlscan 0.9.6-r1: Mutt and terminal url selector (similar to urlview)
 net-misc/fb-client 2.1.1-r4 9999: Client for paste.xinu.at
