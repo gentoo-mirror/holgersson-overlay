@@ -22,4 +22,4 @@ net-mail/urlscan 0.9.7: Mutt and terminal url selector (similar to urlview)
 net-misc/fb-client 2.1.1-r4 9999: Client for paste.xinu.at
 sys-apps/pacman 6.0.1: Archlinux's binary package manager
 sys-apps/pacman-mirrorlist 20210822: Repository list for Archlinux's binary package manager
-sys-fs/gocryptfs 2.2.0: Encrypted overlay filesystem written in Go
+sys-fs/gocryptfs 2.2.0 2.2.1: Encrypted overlay filesystem written in Go
