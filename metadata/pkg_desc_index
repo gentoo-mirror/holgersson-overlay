@@ -1,10 +1,10 @@
 app-crypt/archlinux-keyring 20210902: GnuPG keyring of Archlinux developer keys
 app-crypt/sirikali 1.4.8-r1: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
-app-emulation/nemu 3.0.0_p20211020: ncurses interface for QEMU
-app-emulation/podman-compose 0.1.5_p20211024: Run docker-compose files without root with podman
+app-emulation/nemu 3.0.0_p20211116: ncurses interface for QEMU
+app-emulation/podman-compose 0.1.8_p20211116: Run docker-compose files without root with podman
 app-misc/fff 2.2: Fucking Fast File-Manager (written in bash)
 app-misc/gomatrix 0.0.1_p20200420-r1: Connect to The Matrix and display it's data streams in your terminal
-app-vim/nvim-lspconfig 0.1_p20211024: vim plugin: Quickstart configurations for the Nvim LSP client
+app-vim/nvim-lspconfig 0.1_p20211127: vim plugin: Quickstart configurations for the Nvim LSP client
 app-vim/vim-obsession 1.0_p20210322: vim plugin: mksession automation tool
 app-vim/vim-redacted 0.2_p20191215: vim plugin: Redact text
 app-vim/vimwiki 2.5: vim plugin: Personal Wiki
@@ -21,5 +21,5 @@ net-im/toot 0.28.0: CLI/TUI mastodon client written in python
 net-mail/urlscan 0.9.7: Mutt and terminal url selector (similar to urlview)
 net-misc/fb-client 2.1.1-r4 9999: Client for paste.xinu.at
 sys-apps/pacman 6.0.1: Archlinux's binary package manager
-sys-apps/pacman-mirrorlist 20210822: Repository list for Archlinux's binary package manager
+sys-apps/pacman-mirrorlist 20211114: Repository list for Archlinux's binary package manager
 sys-fs/gocryptfs 2.2.1: Encrypted overlay filesystem written in Go
