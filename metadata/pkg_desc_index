@@ -1,14 +1,16 @@
-app-crypt/archlinux-keyring 20210902: GnuPG keyring of Archlinux developer keys
+app-crypt/archlinux-keyring 20211028: GnuPG keyring of Archlinux developer keys
 app-crypt/sirikali 1.4.8-r1: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
 app-emulation/nemu 3.0.0_p20211116: ncurses interface for QEMU
-app-emulation/podman-compose 0.1.8_p20211116: Run docker-compose files without root with podman
+app-emulation/podman-compose 0.1.8_p20211123: Run docker-compose files without root with podman
 app-misc/fff 2.2: Fucking Fast File-Manager (written in bash)
 app-misc/gomatrix 0.0.1_p20200420-r1: Connect to The Matrix and display it's data streams in your terminal
-app-vim/nvim-lspconfig 0.1_p20211127: vim plugin: Quickstart configurations for the Nvim LSP client
+app-vim/deoplete 6.1: vim plugin: Asynchronous completion framework for neovim/vim8
+app-vim/jedi 0.11.0: vim plugin: binding to the autocompletion library jedi
+app-vim/nvim-lspconfig 0.1_p20211202: vim plugin: Quickstart configurations for the Nvim LSP client
 app-vim/vim-obsession 1.0_p20210322: vim plugin: mksession automation tool
 app-vim/vim-redacted 0.2_p20191215: vim plugin: Redact text
 app-vim/vimwiki 2.5: vim plugin: Personal Wiki
-app-vim/visual-multi 0.5.8_p20210805: vim plugin: Multiple cursors plugin for vim/neovim
+app-vim/visual-multi 0.5.8_p20210831: vim plugin: Multiple cursors plugin for vim/neovim
 dev-libs/olm 3.2.6: Implementation of the olm and megolm cryptographic ratchets
 dev-python/control 0.9.0-r2: Python Control Systems Library
 dev-python/hdf5storage 0.1.18-r1: Python library for using HDF5 formatted files
