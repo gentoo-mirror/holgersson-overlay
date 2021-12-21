@@ -5,12 +5,12 @@ EAPI=8
 HOMEPAGE=https://pypi.org/project/podman-compose/ https://github.com/containers/podman-compose
 INHERIT=distutils-r1
 IUSE=test python_targets_python3_9 python_targets_python3_10
-KEYWORDS=~amd64 ~x86
+KEYWORDS=~amd64
 LICENSE=GPL-2
-RDEPEND=dev-python/pyyaml[python_targets_python3_9(-)?,python_targets_python3_10(-)?] python_targets_python3_9? ( dev-lang/python:3.9 ) python_targets_python3_10? ( dev-lang/python:3.10 ) >=dev-lang/python-exec-2:=[python_targets_python3_9(-)?,python_targets_python3_10(-)?] >=dev-python/setuptools-42.0.2[python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+RDEPEND=app-containers/podman dev-python/pyyaml[python_targets_python3_9(-)?,python_targets_python3_10(-)?] python_targets_python3_9? ( dev-lang/python:3.9 ) python_targets_python3_10? ( dev-lang/python:3.10 ) >=dev-lang/python-exec-2:=[python_targets_python3_9(-)?,python_targets_python3_10(-)?]
 REQUIRED_USE=|| ( python_targets_python3_9 python_targets_python3_10 )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/containers/podman-compose/archive/49fe6e7e0f35dd5db8fe46edf29ec5e60848e7d6.tar.gz -> podman-compose-0.1.8_p20211218.tar.gz
 _eclasses_=multiprocessing	61c959fc55c15c00bbb1079d6a71370b	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	4b66d835ec72e021e359bb81eacfe988	multibuild	05a584848db4901c97fcd94ae7cc3a97	python-utils-r1	a8b7938ade305f087865de7e52d079b5	python-r1	e574a3642f886323f18f867ecc4d91c4	distutils-r1	8041037f74e1f9d149c038c2fe2c97cf
-_md5_=b703cb706a9e927d6c66f2882f5d26f6
+_md5_=a886b287fed9afde3a609db2eca72f7d

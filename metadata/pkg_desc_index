@@ -1,7 +1,7 @@
+app-containers/podman-compose 0.1.8_p20211218-r2: Run docker-compose files without root with podman
 app-crypt/archlinux-keyring 20211028: GnuPG keyring of Archlinux developer keys
 app-crypt/sirikali 1.4.8-r1: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
 app-emulation/nemu 3.0.0_p20211208: ncurses interface for QEMU
-app-emulation/podman-compose 0.1.8_p20211218: Run docker-compose files without root with podman
 app-misc/fff 2.2: Fucking Fast File-Manager (written in bash)
 app-misc/gomatrix 0.0.1_p20200420-r1: Connect to The Matrix and display it's data streams in your terminal
 app-vim/deoplete 6.1: vim plugin: Asynchronous completion framework for neovim/vim8
