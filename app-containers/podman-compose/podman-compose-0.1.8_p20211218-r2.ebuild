@@ -6,7 +6,6 @@ EAPI="8"
 COMMIT_ID="49fe6e7e0f35dd5db8fe46edf29ec5e60848e7d6"
 
 PYTHON_COMPAT=( python3_{9..10} )
-DISTUTILS_USE_SETUPTOOLS=rdepend
 inherit distutils-r1
 
 DESCRIPTION="Run docker-compose files without root with podman"
@@ -24,16 +23,14 @@ else
 		S="${WORKDIR}/qTox-${PV}"
 	fi
 fi
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64"
 
 LICENSE="GPL-2"
 SLOT="0"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DEPEND=""
 RDEPEND="
-	${DEPEND}
+	app-containers/podman
 	dev-python/pyyaml[${PYTHON_USEDEP}]
 "
-BDEPEND=""
