@@ -1,12 +1,12 @@
-app-containers/podman-compose 0.1.8_p20211218-r3: Run docker-compose files without root with podman
+app-containers/podman-compose 0.1.8_p20211230: Run docker-compose files without root with podman
 app-crypt/archlinux-keyring 20211028: GnuPG keyring of Archlinux developer keys
 app-crypt/sirikali 1.4.8-r1: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
-app-emulation/nemu 3.0.0_p20211208: ncurses interface for QEMU
+app-emulation/nemu 3.0.0_p20211230: ncurses interface for QEMU
 app-misc/fff 2.2: Fucking Fast File-Manager (written in bash)
 app-misc/gomatrix 0.0.1_p20200420-r1: Connect to The Matrix and display it's data streams in your terminal
 app-vim/deoplete 6.1: vim plugin: Asynchronous completion framework for neovim/vim8
 app-vim/jedi 0.11.0: vim plugin: binding to the autocompletion library jedi
-app-vim/nvim-lspconfig 0.1_p20211217: vim plugin: Quickstart configurations for the Nvim LSP client
+app-vim/nvim-lspconfig 0.1.0: vim plugin: Quickstart configurations for the Nvim LSP client
 app-vim/vim-obsession 1.0_p20210322: vim plugin: mksession automation tool
 app-vim/vim-redacted 0.2_p20191215: vim plugin: Redact text
 app-vim/vimwiki 2.5: vim plugin: Personal Wiki
