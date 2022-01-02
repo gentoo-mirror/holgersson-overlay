@@ -1,4 +1,4 @@
-app-containers/podman-compose 0.1.8_p20211230: Run docker-compose files without root with podman
+app-containers/podman-compose 1.0.3: Run docker-compose files without root with podman
 app-crypt/archlinux-keyring 20211028: GnuPG keyring of Archlinux developer keys
 app-crypt/sirikali 1.4.8-r1: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
 app-emulation/nemu 3.0.0_p20211230: ncurses interface for QEMU
