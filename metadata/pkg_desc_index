@@ -16,7 +16,7 @@ dev-python/bluepy 1.3.0: Python module for interfacing with BLE devices through 
 dev-python/btlewrap 0.1.0: wrapper around different bluetooth low energy backends
 dev-python/control 0.9.1: Python Control Systems Library
 dev-python/hdf5storage 0.1.18-r1: Python library for using HDF5 formatted files
-dev-python/miflora 0.7.1: Library to read data from Mi Flora sensor
+dev-python/miflora 0.7.2: Library to read data from Mi Flora sensor
 dev-python/multi_key_dict 2.0.3-r2: Multi key dictionary implementation
 dev-python/soundfile 0.10.3_p20211207: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
 games-puzzle/osmos 1.6.1-r4: Play as a single-celled organism absorbing others
