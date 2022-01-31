@@ -23,7 +23,7 @@ games-puzzle/osmos 1.6.1-r4: Play as a single-celled organism absorbing others
 media-fonts/sans-bullshit-sans 0.1-r2: A media-fonts/droid based font with buzzword censorship
 net-im/gomuks 0.2.4_p20211207: A terminal based Matrix client written in Go
 net-im/toot 0.28.0: CLI/TUI mastodon client written in python
-net-mail/urlscan 0.9.8: Mutt and terminal url selector (similar to urlview)
+net-mail/urlscan 0.9.9: Mutt and terminal url selector (similar to urlview)
 net-misc/fb-client 2.1.1-r4 9999: Client for paste.xinu.at
 sys-apps/pacman 6.0.1: Archlinux's binary package manager
 sys-apps/pacman-mirrorlist 20220116: Repository list for Archlinux's binary package manager
