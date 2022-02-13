@@ -1,4 +1,4 @@
-BDEPEND=man? ( dev-go/go-md2man ) >=dev-lang/go-1.12 app-arch/unzip
+BDEPEND=man? ( dev-go/go-md2man ) >=dev-lang/go-1.16 app-arch/unzip
 DEFINED_PHASES=compile install unpack
 DESCRIPTION=Encrypted overlay filesystem written in Go
 EAPI=8
@@ -11,5 +11,5 @@ RDEPEND=sys-fs/fuse ssl? ( dev-libs/openssl:0= )
 RESTRICT=test strip
 SLOT=0
 SRC_URI=https://github.com/rfjakob/gocryptfs/releases/download/v2.2.1/gocryptfs_v2.2.1_src-deps.tar.gz -> gocryptfs-2.2.1.tar.gz
-_eclasses_=go-module	6be3eb7a42e4cecb88f18356a783ee35
+_eclasses_=go-module	a5549ce5cf5b836fcc14e388fe516f90
 _md5_=fc3fec29f9f26fd0a0e7779fa39ebcd3
