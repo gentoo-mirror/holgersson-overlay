@@ -1,6 +1,6 @@
 app-containers/podman-compose 1.0.3: Run docker-compose files without root with podman
 app-crypt/archlinux-keyring 20220125: GnuPG keyring of Archlinux developer keys
-app-crypt/sirikali 1.4.8-r1: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
+app-crypt/sirikali 1.5.0: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
 app-emulation/nemu 3.0.0_p20220125: ncurses interface for QEMU
 app-misc/fff 2.2: Fucking Fast File-Manager (written in bash)
 app-misc/gomatrix 0.0.1_p20200420-r1: Connect to The Matrix and display it's data streams in your terminal
