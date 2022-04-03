@@ -1,0 +1,16 @@
+BDEPEND=>=dev-lang/go-1.16 app-arch/unzip
+DEFINED_PHASES=compile install unpack
+DEPEND=encryption? ( dev-libs/olm )
+DESCRIPTION=A terminal based Matrix client written in Go
+EAPI=8
+HOMEPAGE=https://github.com/tulir/gomuks
+INHERIT=go-module
+IUSE=+encryption
+KEYWORDS=~amd64
+LICENSE=AGPL-3
+RDEPEND=encryption? ( dev-libs/olm )
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/tulir/gomuks/archive/a7562a068ad46839d18b01fa816c60362586999d.tar.gz -> gomuks-0.2.4_p20220330.tar.gz https://files.holgersson.xyz/gentoo/distfiles/gomuks-0.2.4_p20220330-deps.tar.xz
+_eclasses_=go-module	3b47b6e0e18257d2abb17663c575fc36
+_md5_=375e3c8c8821120ef207bb191767c82d

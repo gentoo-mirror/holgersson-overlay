@@ -12,4 +12,4 @@ RESTRICT=test strip
 SLOT=0
 SRC_URI=https://github.com/rfjakob/gocryptfs/releases/download/v2.2.1/gocryptfs_v2.2.1_src-deps.tar.gz -> gocryptfs-2.2.1.tar.gz
 _eclasses_=go-module	3b47b6e0e18257d2abb17663c575fc36
-_md5_=fc3fec29f9f26fd0a0e7779fa39ebcd3
+_md5_=f95fabe0a648313786f2fc99623c8bdd
