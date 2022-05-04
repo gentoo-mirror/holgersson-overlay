@@ -36,7 +36,7 @@ Run eselect repository from `app-eselect/eselect-repository`:
 
 .. code:: shell
 
-	$ eselect repository enable holgersson-overlay
+    $ eselect repository enable holgersson-overlay
 
 
 Using layman
@@ -45,7 +45,7 @@ Using layman
 Run layman from `app-portage/layman`:
 
 .. code:: shell
- 
+
    $ layman -a holgersson-overlay
 
 and optional for global updates:
@@ -56,6 +56,16 @@ and optional for global updates:
    $ emerge --sync
 
 You might want to set `USE="sync-plugin-portage"` for layman, too.
+
+Add the distfiles archive to GENTOO_MIRRORS
+-------------------------------------------
+
+You may want to optionally add the distfiles mirror of this overlay to your
+GENTOO_MIRRORS configuration in /etc/portage:
+
+.. code:: shell
+
+   GENTOO_MIRRORS="... https://files.holgersson.xyz/gentoo/distfiles/ ..."
 
 Maintainer
 ==========
@@ -69,7 +79,6 @@ critics and chorus of praise are all welcome!
 GPG key ID: **0x8AD9 60BB A57A F797 88CC FEC0 3CAA 2CA5 14E4 EE5E**
 
 License and copying
-
 ===================
 
 - The contents of this document are licensed under the `CC-BY-SA-3.0 license`.
