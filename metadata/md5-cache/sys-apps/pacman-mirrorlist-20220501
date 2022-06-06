@@ -1,9 +1,0 @@
-DEFINED_PHASES=install postinst unpack
-DESCRIPTION=Repository list for Archlinux's binary package manager
-EAPI=8
-HOMEPAGE=https://archlinux.org/mirrorlist/
-KEYWORDS=~amd64
-LICENSE=GPL-2
-SLOT=0
-SRC_URI=https://raw.githubusercontent.com/archlinux/svntogit-packages/1b888a7bc93072827664296ae7ce2975277dc960/trunk/mirrorlist -> pacman-mirrorlist-20220501
-_md5_=46191ec072d53c518ad57e30db96563e
