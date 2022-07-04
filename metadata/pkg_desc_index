@@ -1,16 +1,15 @@
 app-containers/podman-compose 1.0.3: Run docker-compose files without root with podman
 app-crypt/archlinux-keyring 20220424: GnuPG keyring of Archlinux developer keys
 app-crypt/sirikali 1.5.0: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
-app-emulation/nemu 3.0.0_p20220604: ncurses interface for QEMU
+app-emulation/nemu 3.0.0_p20220701: ncurses interface for QEMU
 app-misc/fff 2.2: Fucking Fast File-Manager (written in bash)
 app-misc/gomatrix 0.0.1_p20200420-r2: Connect to The Matrix and display it's data streams in your terminal
 app-vim/deoplete 6.1-r1: vim plugin: Asynchronous completion framework for neovim/vim8
-app-vim/jedi 0.11.0-r1: vim plugin: binding to the autocompletion library jedi
 app-vim/nvim-lspconfig 0.1.3-r1: vim plugin: Quickstart configurations for the Nvim LSP client
 app-vim/vim-obsession 1.0_p20220405-r1: vim plugin: mksession automation tool
 app-vim/vim-redacted 0.2_p20191215-r1: vim plugin: Redact text
 app-vim/vimwiki 2.5-r1: vim plugin: Personal Wiki
-app-vim/visual-multi 0.5.8_p20220506: vim plugin: Multiple cursors plugin for vim/neovim
+app-vim/visual-multi 0.5.8_p20220610: vim plugin: Multiple cursors plugin for vim/neovim
 dev-libs/olm 3.2.12: Implementation of the olm and megolm cryptographic ratchets
 dev-python/bluepy 1.3.0: Python module for interfacing with BLE devices through Bluez
 dev-python/btlewrap 0.1.1: wrapper around different bluetooth low energy backends
@@ -18,14 +17,14 @@ dev-python/control 0.9.2: Python Control Systems Library
 dev-python/hdf5storage 0.1.18-r1: Python library for using HDF5 formatted files
 dev-python/miflora 0.7.2: Library to read data from Mi Flora sensor
 dev-python/multi_key_dict 2.0.3-r2: Multi key dictionary implementation
-dev-python/soundfile 0.11.0_beta20220602: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
+dev-python/soundfile 0.11.0_beta20220223: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
 games-puzzle/osmos 1.6.1-r4: Play as a single-celled organism absorbing others
 media-fonts/sans-bullshit-sans 0.1-r2: A media-fonts/droid based font with buzzword censorship
 media-gfx/catimg 2.7.0: Terminal image renderer, C/binary version
-net-im/gomuks 0.2.4_p20220424: A terminal based Matrix client written in Go
+net-im/gomuks 0.2.4_p20220601: A terminal based Matrix client written in Go
 net-im/toot 0.28.0: CLI/TUI mastodon client written in python
 net-mail/urlscan 0.9.9: Mutt and terminal url selector (similar to urlview)
-net-misc/fb-client 2.1.1-r4 9999: Client for paste.xinu.at
+net-misc/fb-client 2.3.0 9999: Client for paste.xinu.at
 net-misc/ssh-tools 1.7: Library to read data from Mi Flora sensor
 sys-apps/pacman 6.0.1: Archlinux's binary package manager
 sys-apps/pacman-mirrorlist 20220605: Repository list for Archlinux's binary package manager

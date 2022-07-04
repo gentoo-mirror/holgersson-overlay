@@ -4,12 +4,11 @@ EAPI=8
 HOMEPAGE=https://paste.xinu.at https://git.server-speed.net/users/flo/fb/
 INHERIT=python-r1
 IUSE=+clipboard python_targets_python3_9 python_targets_python3_10
-KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
-RDEPEND=python_targets_python3_9? ( >=dev-lang/python-3.9.12:3.9 ) python_targets_python3_10? ( >=dev-lang/python-3.10.4:3.10 ) dev-python/pyxdg[python_targets_python3_9(-)?,python_targets_python3_10(-)?] dev-python/pycurl[python_targets_python3_9(-)?,python_targets_python3_10(-)?] clipboard? ( x11-misc/xclip )
+RDEPEND=python_targets_python3_9? ( >=dev-lang/python-3.9.12:3.9 ) python_targets_python3_10? ( >=dev-lang/python-3.10.4:3.10 ) dev-python/pyxdg[python_targets_python3_9(-)?,python_targets_python3_10(-)?] dev-python/pycurl[python_targets_python3_9(-)?,python_targets_python3_10(-)?] clipboard? ( || ( x11-misc/xclip gui-apps/wl-clipboard ) )
 REQUIRED_USE=|| ( python_targets_python3_9 python_targets_python3_10 )
 RESTRICT=test
 SLOT=0
-SRC_URI=https://paste.xinu.at/data/client/fb-2.1.1.tar.gz -> fb-client-2.1.1-r4.tar.gz
+SRC_URI=https://paste.xinu.at/data/client/fb-2.3.0.tar.gz -> fb-client-2.3.0.tar.gz
 _eclasses_=multibuild	d26d81f242cb193d899a72bca423d0bd	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	e9da88162e7a3c60376e80c2c2adcdfb	multilib	4fbbbc98f236f1b43acd99476bc3cd85	python-utils-r1	32313e7e2fbfba8f62a99ef923fc923c	python-r1	e2883e4f04f0503cdf7f2954e2bf5e15
-_md5_=47f8bc926008006784f2e8d0396010bc
+_md5_=eeb2ea3bba2004f80215f308c248d85e
