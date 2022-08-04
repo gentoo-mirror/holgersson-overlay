@@ -1,7 +1,7 @@
 app-containers/podman-compose 1.0.3: Run docker-compose files without root with podman
 app-crypt/archlinux-keyring 20220727: GnuPG keyring of Archlinux developer keys
 app-crypt/sirikali 1.5.0: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
-app-emulation/nemu 3.0.0_p20220701: ncurses interface for QEMU
+app-emulation/nemu 3.0.0_p20220804: ncurses interface for QEMU
 app-misc/fff 2.2: Fucking Fast File-Manager (written in bash)
 app-vim/deoplete 6.1-r1: vim plugin: Asynchronous completion framework for neovim/vim8
 app-vim/nvim-cmp 0_pre20220725: neovim plugin: A completion plugin for neovim coded in Lua
@@ -24,7 +24,7 @@ media-fonts/sans-bullshit-sans 0.1-r2: A media-fonts/droid based font with buzzw
 media-gfx/catimg 2.7.0: Terminal image renderer, C/binary version
 net-im/gomuks 0.2.4_p20220601: A terminal based Matrix client written in Go
 net-im/toot 0.28.0: CLI/TUI mastodon client written in python
-net-mail/urlscan 0.9.9: Mutt and terminal url selector (similar to urlview)
+net-mail/urlscan 0.9.10: Mutt and terminal url selector (similar to urlview)
 net-misc/fb-client 2.3.0 9999: Client for paste.xinu.at
 net-misc/ssh-tools 1.7: Library to read data from Mi Flora sensor
 sys-apps/pacman 6.0.1: Archlinux's binary package manager
