@@ -11,6 +11,6 @@ RDEPEND=app-editors/neovim app-vim/vim-vsnip app-vim/nvim-lspconfig || ( >=app-e
 REQUIRED_USE=^^ ( lua_single_target_luajit lua_single_target_lua5-1 lua_single_target_lua5-3 lua_single_target_lua5-4 )
 RESTRICT=test
 SLOT=0
-SRC_URI=https://github.com/hrsh7th/nvim-cmp/archive/706371f1300e7c0acb98b346f80dad2dd9b5f679.tar.gz -> nvim-cmp-0_pre20220725.tar.gz
+SRC_URI=https://github.com/hrsh7th/nvim-cmp/archive/3cc0c182ecc30d2f601182eb652833674b6fe8a8.tar.gz -> nvim-cmp-0_pre20220820.tar.gz
 _eclasses_=toolchain-funcs	1542e649be915f43f6908a9e93909961	multilib	5ca4e49abed8e3a2f7b56920eadee157	lua-utils	e69ff116248d78546ae1a234c086fe80	lua-single	f2c2fb82c912dd65d53bdae3613a331f	vim-doc	f088862726f2bc672c57b1063b81ec52	vim-plugin	89bf54501de4a75f241062d5a56e787f
-_md5_=77bad39e0cbf5f7aba7900434c5a185a
+_md5_=a929760b70fbd3ec3d67f5cd9dae0f39
