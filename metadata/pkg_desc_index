@@ -25,7 +25,7 @@ net-im/gomuks 0.2.4_p20220601: A terminal based Matrix client written in Go
 net-im/toot 0.28.0: CLI/TUI mastodon client written in python
 net-mail/urlscan 0.9.10: Mutt and terminal url selector (similar to urlview)
 net-misc/fb-client 2.3.0-r1 9999: Client for paste.xinu.at
-net-misc/q 0.8.2: DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH
+net-misc/q 0.8.2-r1: DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH
 net-misc/ssh-tools 1.7: Library to read data from Mi Flora sensor
 sys-apps/pacman 6.0.1: Archlinux's binary package manager
 sys-apps/pacman-mirrorlist 20220828: Repository list for Archlinux's binary package manager

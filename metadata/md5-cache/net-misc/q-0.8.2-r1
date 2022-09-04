@@ -10,4 +10,4 @@ RESTRICT=strip
 SLOT=0
 SRC_URI=https://github.com/natesales/q/archive/v0.8.2.tar.gz -> q-0.8.2.tar.gz https://files.holgersson.xyz/gentoo/distfiles/q-0.8.2-deps.tar.xz
 _eclasses_=go-module	05668e36c51c78c9681fdf4aefa0abec
-_md5_=3d08f6e9bf16c29d0a5994403579c451
+_md5_=8955ec3395610afcaf4e1928f743403c
