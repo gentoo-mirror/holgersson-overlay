@@ -1,16 +1,16 @@
 BDEPEND=app-text/asciidoc doc? ( app-doc/doxygen ) test? ( sys-apps/fakeroot sys-apps/fakechroot ) >=dev-util/meson-0.62.2 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
 DEFINED_PHASES=compile configure install postinst test
-DEPEND=app-crypt/archlinux-keyring app-arch/libarchive:=[lzma] gpg? ( >=app-crypt/gpgme-1.13.0:= ) curl? ( net-misc/curl ) dev-libs/openssl:0= virtual/libiconv virtual/libintl
+DEPEND=app-crypt/archlinux-keyring app-arch/libarchive:=[lzma] gpg? ( >=app-crypt/gpgme-1.13.0:= ) net-misc/curl dev-libs/openssl:0= virtual/libiconv virtual/libintl
 DESCRIPTION=Archlinux's binary package manager
 EAPI=8
 HOMEPAGE=https://archlinux.org/pacman/ https://archlinux.org/packages/core/x86_64/pacman/
 INHERIT=meson
-IUSE=curl doc +gpg test
+IUSE=doc +gpg test
 KEYWORDS=-* ~amd64
 LICENSE=GPL-2
-RDEPEND=app-crypt/archlinux-keyring app-arch/libarchive:=[lzma] gpg? ( >=app-crypt/gpgme-1.13.0:= ) curl? ( net-misc/curl ) dev-libs/openssl:0= virtual/libiconv virtual/libintl sys-apps/pacman-mirrorlist
+RDEPEND=app-crypt/archlinux-keyring app-arch/libarchive:=[lzma] gpg? ( >=app-crypt/gpgme-1.13.0:= ) net-misc/curl dev-libs/openssl:0= virtual/libiconv virtual/libintl sys-apps/pacman-mirrorlist
 RESTRICT=test
 SLOT=0/10
-SRC_URI=https://sources.archlinux.org/other/pacman/pacman-6.0.1.tar.xz
+SRC_URI=https://sources.archlinux.org/other/pacman/pacman-6.0.2.tar.xz
 _eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	58ec4e54962bf45d065fb95030701514	toolchain-funcs	1542e649be915f43f6908a9e93909961	multilib	5ca4e49abed8e3a2f7b56920eadee157	python-utils-r1	b9fc5e97e886514e5132f50465185401	meson	1994a5aef5d4f5798b92f64d6f9a6003
-_md5_=4f453c915ccfdc123bcf64cfd076134f
+_md5_=3112789b9cab8814b49650ffb544a046
