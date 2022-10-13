@@ -12,5 +12,5 @@ REQUIRED_USE=^^ ( lua_single_target_luajit lua_single_target_lua5-1 lua_single_t
 RESTRICT=test
 SLOT=0
 SRC_URI=https://github.com/hrsh7th/vim-vsnip/archive/8f199ef690ed26dcbb8973d9a6760d1332449ac9.tar.gz -> vim-vsnip-0_pre20220422.tar.gz
-_eclasses_=toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144	multilib	5ca4e49abed8e3a2f7b56920eadee157	lua-utils	e69ff116248d78546ae1a234c086fe80	lua-single	f2c2fb82c912dd65d53bdae3613a331f	vim-doc	f088862726f2bc672c57b1063b81ec52	vim-plugin	89bf54501de4a75f241062d5a56e787f
+_eclasses_=toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144	multilib	5ca4e49abed8e3a2f7b56920eadee157	lua-utils	e69ff116248d78546ae1a234c086fe80	lua-single	aee383a0de35701b9eb0b27077a1c143	vim-doc	f088862726f2bc672c57b1063b81ec52	vim-plugin	89bf54501de4a75f241062d5a56e787f
 _md5_=6ca19af300589df3ca819307a3ebee5f
