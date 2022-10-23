@@ -10,6 +10,6 @@ KEYWORDS=~amd64 ~x86
 LICENSE=BSD-2
 RDEPEND=app-emulation/qemu[vnc,virtfs,spice?] dev-db/sqlite:3= >=sys-libs/ncurses-6.2_p20210619:0= virtual/libusb:1 virtual/libudev:= dbus? ( sys-apps/dbus ) network-map? ( media-gfx/graphviz[svg] ) ovf? ( dev-libs/libxml2:2 app-arch/libarchive ) remote-control? ( dev-libs/openssl:= ) spice? ( app-emulation/virt-viewer[spice] ) vnc-client? ( net-misc/tigervnc )
 SLOT=0
-SRC_URI=https://github.com/nemuTUI/nemu/archive/f688112a8ae371608836e06ed54132c8dec577a0.tar.gz -> nemu-3.0.0_p20220826.tar.gz
+SRC_URI=https://github.com/nemuTUI/nemu/archive/90e0c50d1a35d42c71acd9f745f4d261662eb59d.tar.gz -> nemu-3.0.0_p20221017.tar.gz
 _eclasses_=toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	29a755b1291d64133634d80b0328f153	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	58ec4e54962bf45d065fb95030701514	xdg-utils	ac0e315a3688929e34ac75b139e7349a	cmake	44afbf15c35884f7c840470f1cf05d0d	linux-info	bbfa385d6907d7948d49a5e107bd654d
-_md5_=59762db854c976fab1b842f9bf02cd77
+_md5_=388f7df82e20335e25dc2d89733c801d
