@@ -11,6 +11,6 @@ RDEPEND=app-editors/neovim dev-libs/tree-sitter-meta || ( >=app-editors/vim-7.3 
 REQUIRED_USE=^^ ( lua_single_target_luajit lua_single_target_lua5-1 lua_single_target_lua5-3 lua_single_target_lua5-4 )
 RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=https://github.com/nvim-treesitter/nvim-treesitter/archive/07e5fcbaad1a503bdde87a62029be6e6d5beb06b.tar.gz -> nvim-treesitter-0.0_p20221005.tar.gz
+SRC_URI=https://github.com/nvim-treesitter/nvim-treesitter/archive/692432df294ef3881f450dc80839e21c978cde28.tar.gz -> nvim-treesitter-0.0_p20221112.tar.gz
 _eclasses_=toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144	multilib	5ca4e49abed8e3a2f7b56920eadee157	lua-utils	e69ff116248d78546ae1a234c086fe80	lua-single	aee383a0de35701b9eb0b27077a1c143	vim-doc	f088862726f2bc672c57b1063b81ec52	vim-plugin	89bf54501de4a75f241062d5a56e787f
-_md5_=1f2c7950e58aad74928b9d987d5675b3
+_md5_=7cdb56439963804912f8cd80c7f00793
