@@ -1,31 +1,31 @@
-app-containers/podman-compose 1.0.3-r1: Run docker-compose files without root with podman
+app-containers/podman-compose 1.0.3-r3: Run docker-compose files without root with podman
 app-crypt/archlinux-keyring 20221110: GnuPG keyring of Archlinux developer keys
 app-crypt/sirikali 1.5.0: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
-app-emulation/nemu 3.1.0_p20221109: ncurses interface for QEMU
+app-emulation/nemu 3.1.0_p20221118: ncurses interface for QEMU
 app-misc/fff 2.2: Fucking Fast File-Manager (written in bash)
 app-vim/neoformat 0.4.0_p20221112: vim plugin: in-buffer formatter runner
 app-vim/nvim-cmp 0.0.1: neovim plugin: A completion plugin for neovim coded in Lua
 app-vim/nvim-lspconfig 0.1.3-r1: vim plugin: Quickstart configurations for the Nvim LSP client
-app-vim/nvim-treesitter 0.0_p20221112: neovim plugin: tree sitter support for syntax highlighting
+app-vim/nvim-treesitter 0.0_p20221121: neovim plugin: tree sitter support for syntax highlighting
 app-vim/vim-obsession 1.0_p20220405-r1: vim plugin: mksession automation tool
 app-vim/vim-redacted 0.2_p20191215-r1: vim plugin: Redact text
-app-vim/vim-vsnip 0_pre20221031: Snippet plugin with support for LSP/VSCode snippet format
+app-vim/vim-vsnip 0_pre20221114: Snippet plugin with support for LSP/VSCode snippet format
 app-vim/vimwiki 2.5-r1: vim plugin: Personal Wiki
 app-vim/visual-multi 0.5.8_p20220914: vim plugin: Multiple cursors plugin for vim/neovim
-dev-libs/olm 3.2.13: Implementation of the olm and megolm cryptographic ratchets
-dev-python/bluepy 1.3.0: Python module for interfacing with BLE devices through Bluez
-dev-python/btlewrap 0.1.1: wrapper around different bluetooth low energy backends
-dev-python/control 0.9.2: Python Control Systems Library
-dev-python/hdf5storage 0.1.18-r1: Python library for using HDF5 formatted files
-dev-python/miflora 0.7.2: Library to read data from Mi Flora sensor
-dev-python/multi_key_dict 2.0.3-r2: Multi key dictionary implementation
-dev-python/soundfile 0.11.0: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
+dev-libs/olm 3.2.13-r1: Implementation of the olm and megolm cryptographic ratchets
+dev-python/bluepy 1.3.0-r1: Python module for interfacing with BLE devices through Bluez
+dev-python/btlewrap 0.1.1-r1: wrapper around different bluetooth low energy backends
+dev-python/control 0.9.2-r1: Python Control Systems Library
+dev-python/hdf5storage 0.1.18-r2: Python library for using HDF5 formatted files
+dev-python/miflora 0.7.2-r1: Library to read data from Mi Flora sensor
+dev-python/multi_key_dict 2.0.3-r3: Multi key dictionary implementation
+dev-python/soundfile 0.11.0-r1: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
 games-puzzle/osmos 1.6.1-r4: Play as a single-celled organism absorbing others
 media-fonts/sans-bullshit-sans 0.1-r2: A media-fonts/droid based font with buzzword censorship
 media-gfx/catimg 2.7.0: Terminal image renderer, C/binary version
-net-im/gomuks 0.2.4_p20221109: A terminal based Matrix client written in Go
-net-im/toot 0.28.1: CLI/TUI mastodon client written in python
-net-mail/urlscan 0.9.10: Mutt and terminal url selector (similar to urlview)
+net-im/gomuks 0.3.0: A terminal based Matrix client written in Go
+net-im/toot 0.29.0: CLI/TUI mastodon client written in python
+net-mail/urlscan 0.9.10-r1: Mutt and terminal url selector (similar to urlview)
 net-misc/fb-client 2.3.0-r1 9999: Client for paste.xinu.at
 net-misc/q 0.8.4: DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH
 net-misc/ssh-tools 1.7: Library to read data from Mi Flora sensor
