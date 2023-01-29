@@ -1,3 +1,5 @@
+acct-group/dendrite 0: Group for matrix homerserver dendrite
+acct-user/dendrite 0: User for matrix homerserver dendrite
 app-containers/podman-compose 1.0.3-r3: Run docker-compose files without root with podman
 app-crypt/archlinux-keyring 20221220: GnuPG keyring of Archlinux developer keys
 app-crypt/sirikali 1.5.0: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
@@ -27,6 +29,7 @@ dev-python/unearth 0.7.2: Utility to fetch and download python packages
 games-puzzle/osmos 1.6.1-r4: Play as a single-celled organism absorbing others
 media-fonts/sans-bullshit-sans 0.1-r2: A media-fonts/droid based font with buzzword censorship
 media-gfx/catimg 2.7.0: Terminal image renderer, C/binary version
+net-im/dendrite 0.11.0: Matrix homeserver written in go
 net-im/gomuks 0.3.0_p20221121: A terminal based Matrix client written in Go
 net-im/toot 0.33.1: CLI/TUI mastodon client written in python
 net-mail/urlscan 0.9.10-r1: Mutt and terminal url selector (similar to urlview)
