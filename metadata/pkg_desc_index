@@ -1,5 +1,6 @@
 acct-group/dendrite 0: Group for matrix homerserver dendrite
 acct-user/dendrite 0: User for matrix homerserver dendrite
+app-backup/restic 0.15.1: A backup program that is fast, efficient and secure
 app-containers/podman-compose 1.0.3-r3: Run docker-compose files without root with podman
 app-crypt/archlinux-keyring 20230130: GnuPG keyring of Archlinux developer keys
 app-crypt/sirikali 1.5.0: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
