@@ -12,5 +12,5 @@ RDEPEND=encryption? ( dev-libs/olm )
 RESTRICT=strip
 SLOT=0
 SRC_URI=https://github.com/tulir/gomuks/archive/2751b186fa05a4c6130beeb6537c44a7f2abd91a.tar.gz -> gomuks-0.3.0_p20230115.tar.gz https://files.holgersson.xyz/gentoo/distfiles/gomuks-0.3.0_p20230115-deps.tar.xz
-_eclasses_=go-module	75029f071ebc843223233ab1b0a2d4a5
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	go-module	01650d8433daaaf046d2a287306c28cd
 _md5_=a2296571566c13c3c4a9f72140940a00
