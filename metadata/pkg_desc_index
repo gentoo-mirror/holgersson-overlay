@@ -27,13 +27,13 @@ dev-python/pdm 2.4.6: Python package and dependcy manager supporting latest PEPs
 dev-python/pyproject-hooks 1.0.0: Wrappers to call pyproject.toml-based build backend hooks
 dev-python/shellingham 1.5.0: Tool to detect surrounding shell
 dev-python/soundfile 0.12.1: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
-dev-python/unearth 0.7.2: Utility to fetch and download python packages
+dev-python/unearth 0.8.0: Utility to fetch and download python packages
 games-puzzle/osmos 1.6.1-r4: Play as a single-celled organism absorbing others
 media-fonts/sans-bullshit-sans 0.1-r2: A media-fonts/droid based font with buzzword censorship
 media-gfx/catimg 2.7.0: Terminal image renderer, C/binary version
 net-im/dendrite 0.11.1: Matrix homeserver written in go
 net-im/gomuks 0.3.0_p20230115: A terminal based Matrix client written in Go
-net-im/toot 0.34.0: CLI/TUI mastodon client written in python
+net-im/toot 0.35.0: CLI/TUI mastodon client written in python
 net-mail/urlscan 0.9.10-r2: Mutt and terminal url selector (similar to urlview)
 net-misc/fb-client 2.3.0-r1 9999: Client for paste.xinu.at
 net-misc/q 0.9.0: DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH
