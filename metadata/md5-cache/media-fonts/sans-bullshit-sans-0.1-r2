@@ -9,5 +9,5 @@ KEYWORDS=~*
 LICENSE=Apache-2.0
 SLOT=0
 SRC_URI=https://pixelambacht.nl/downloads/SansBullshitSans.ttf -> sans-bullshit-sans-0.1.ttf
-_eclasses_=font	5e03cb70902daa9ff8967c61130f0f60
+_eclasses_=font	aa113a3df9cd0a9693a1c1ee7c34a6eb
 _md5_=6c52abfddd94da5495ba001d21db0722
