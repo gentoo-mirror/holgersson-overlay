@@ -1,16 +1,16 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup
 DEPEND=|| ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
-DESCRIPTION=Snippet plugin with support for LSP/VSCode snippet format
+DESCRIPTION=neovim plugin: tree sitter support for syntax highlighting
 EAPI=8
-HOMEPAGE=https://github.com/hrsh7th/vim-vsnip
+HOMEPAGE=https://github.com/nvim-treesitter/nvim-treesitter
 INHERIT=lua-single vim-plugin
 IUSE=test lua_single_target_luajit lua_single_target_lua5-1 lua_single_target_lua5-3 lua_single_target_lua5-4
 KEYWORDS=~amd64
-LICENSE=MIT
-RDEPEND=app-editors/neovim app-vim/vim-vsnip app-vim/nvim-lspconfig || ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
+LICENSE=Apache-2.0
+RDEPEND=app-editors/neovim dev-libs/tree-sitter-meta || ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
 REQUIRED_USE=^^ ( lua_single_target_luajit lua_single_target_lua5-1 lua_single_target_lua5-3 lua_single_target_lua5-4 )
-RESTRICT=test
+RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=https://github.com/hrsh7th/vim-vsnip/archive/e44026b5394fd79aa0f2118aaf41627ef9c354ee.tar.gz -> vim-vsnip-0_pre20221130.tar.gz
+SRC_URI=https://github.com/nvim-treesitter/nvim-treesitter/archive/8ae2c8ff495fdf0f0f07edcd7afe271f15a70562.tar.gz -> nvim-tree-sitter-0_p20230321.tar.gz
 _eclasses_=toolchain-funcs	6001248ef162a5fa2a21ce132a212f6b	multilib	5ca4e49abed8e3a2f7b56920eadee157	lua-utils	d37a16dbcc1f07f71bc48da75ed7a0cb	lua-single	86d497a20c93c7ce83af442f627515c1	vim-doc	f088862726f2bc672c57b1063b81ec52	vim-plugin	eb89c94cd8e3b681c68883e8b6b40e83
-_md5_=86aafa61e64165c6d3974850dadaf54d
+_md5_=cbac3e9ec6b63ba98789ab728c1fcbe2
