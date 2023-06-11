@@ -2,7 +2,6 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-app-containers/dnsname:encryption - Enable encryption using dev-libs/olm
 app-crypt/sirikali:gnome-keyring - Enable support for storing passowrds in gnome-keyring
 app-crypt/sirikali:kwallet - Enable support for storing passwords in kwallet
 app-emulation/nemu:network-map - Adds possibility of exporting network map to SVG
