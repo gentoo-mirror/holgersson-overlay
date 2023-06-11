@@ -17,14 +17,14 @@ else
 fi
 # Add the manually vendored tarball.
 # Compress the tarball with: xz -9kT0 --memlimit-decompress=256M
-SRC_URI+=" https://files.holgersson.xyz/gentoo/distfiles/${P}-deps.tar.xz"
+SRC_URI+=" https://files.holgersson.xyz/gentoo/distfiles/holgersson-overlay/${P}-deps.tar.xz"
 
 KEYWORDS="~amd64"
 LICENSE="Apache-2.0"
 SLOT="0"
-IUSE="+encryption"
+IUSE=""
 
-DEPEND="encryption? ( dev-libs/olm )"
+DEPEND=""
 RDEPEND="${DEPEND}"
 BDEPEND=""
 DOCS=(
@@ -44,7 +44,6 @@ src_compile() {
 		-mod=vendor -v -work -x
 	)
 
-	use encryption || export CGO_ENABLED=0
 	go build  "${mygobuildargs[@]}" "${EGO_PN}/plugins/meta/dnsname" \
 		|| die "go build failed"
 }
