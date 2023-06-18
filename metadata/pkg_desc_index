@@ -29,7 +29,7 @@ dev-python/unearth 0.9.1: Utility to fetch and download python packages
 games-puzzle/osmos 1.6.1-r4: Play as a single-celled organism absorbing others
 media-fonts/sans-bullshit-sans 0.1-r2: A media-fonts/droid based font with buzzword censorship
 media-gfx/catimg 2.7.0: Terminal image renderer, C/binary version
-net-im/dendrite 0.12.0 0.12.0_p20230607: Matrix homeserver written in go
+net-im/dendrite 0.12.0 0.12.0_p20230615: Matrix homeserver written in go
 net-im/gomuks 0.3.0_p20230404: A terminal based Matrix client written in Go
 net-im/toot 0.36.0: CLI/TUI mastodon client written in python
 net-mail/urlscan 1.0.0: Mutt and terminal url selector (similar to urlview)
