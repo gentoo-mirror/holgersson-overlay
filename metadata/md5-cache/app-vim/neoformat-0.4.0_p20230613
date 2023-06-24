@@ -10,6 +10,6 @@ LICENSE=BSD-2
 RDEPEND=|| ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
 RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=https://github.com/sbdchd/neoformat/archive/2d5d071d5957681ae677ee06f6eb879a61b7b618.tar.gz -> neoformat-0.4.0_p20230512.tar.gz
+SRC_URI=https://github.com/sbdchd/neoformat/archive/1412d2016a772aef6aea818c840eb7803ade0312.tar.gz -> neoformat-0.4.0_p20230613.tar.gz
 _eclasses_=vim-doc	f088862726f2bc672c57b1063b81ec52	vim-plugin	92ea4186891b666b0970fa1d713d64fa
-_md5_=36fcc5020ec693fb670c7302de5c6bb6
+_md5_=c802e98adca7bd13d6f726ce635b0365
