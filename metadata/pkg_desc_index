@@ -6,9 +6,9 @@ app-crypt/archlinux-keyring 20230504: GnuPG keyring of Archlinux developer keys
 app-crypt/sirikali 1.5.1: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
 app-emulation/nemu 3.2.0_p20230516: ncurses interface for QEMU
 app-misc/fff 2.2: Fucking Fast File-Manager (written in bash)
-app-vim/neoformat 0.4.0_p20230613: vim plugin: in-buffer formatter runner
-app-vim/nvim-cmp 0.0.1: neovim plugin: A completion plugin for neovim coded in Lua
-app-vim/nvim-lspconfig 0.1.4: vim plugin: Quickstart configurations for the Nvim LSP client
+app-vim/neoformat 0.4.0_p20230701: vim plugin: in-buffer formatter runner
+app-vim/nvim-cmp 0.0.1_p20230710: neovim plugin: A completion plugin for neovim coded in Lua
+app-vim/nvim-lspconfig 0.1.4_p20230718: vim plugin: Quickstart configurations for the Nvim LSP client
 app-vim/nvim-tree-sitter 0_p20230624: neovim plugin: tree sitter support for syntax highlighting
 app-vim/vim-obsession 1.0_p20221202: vim plugin: mksession automation tool
 app-vim/vim-redacted 0.2_p20191215-r1: vim plugin: Redact text
@@ -25,7 +25,7 @@ dev-python/miflora 0.7.2-r2: Library to read data from Mi Flora sensor
 dev-python/multi_key_dict 2.0.3-r3: Multi key dictionary implementation
 dev-python/pdm 2.7.4: Python package and dependcy manager supporting latest PEPs
 dev-python/soundfile 0.12.1: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
-dev-python/unearth 0.9.2: Utility to fetch and download python packages
+dev-python/unearth 0.10.0: Utility to fetch and download python packages
 games-puzzle/osmos 1.6.1-r4: Play as a single-celled organism absorbing others
 media-fonts/sans-bullshit-sans 0.1-r2: A media-fonts/droid based font with buzzword censorship
 media-gfx/catimg 2.7.0: Terminal image renderer, C/binary version
