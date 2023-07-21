@@ -10,5 +10,5 @@ RDEPEND=acct-user/dendrite acct-group/dendrite
 RESTRICT=test strip
 SLOT=0
 SRC_URI=https://github.com/matrix-org/dendrite/archive/33ff3095722d063673f7168dd63bb2aef8ca735d.tar.gz -> dendrite-0.13.1_p20230714.tar.gz https://files.holgersson.xyz/gentoo/distfiles/holgersson-overlay/dendrite-0.13.1_p20230714-deps.tar.xz
-_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	go-module	8624eede24936fd7666e5298e5332f22	systemd	5f4bb0758df2e483babf68cd517078ca
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	67b3e3d8916d690003f645486ed86aac	multilib	c19072c3cd7ac5cb21de013f7e9832e0	go-module	8624eede24936fd7666e5298e5332f22	systemd	5f4bb0758df2e483babf68cd517078ca
 _md5_=baa2c2b8f90eb1b882affbbe5b5adee3
