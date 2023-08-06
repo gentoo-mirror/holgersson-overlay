@@ -36,3 +36,4 @@ net-misc/ssh-tools 1.7: Bash scripts to make ssh more convenient
 sys-apps/pacman 6.0.2: Archlinux's binary package manager
 sys-apps/pacman-mirrorlist 20221204: Repository list for Archlinux's binary package manager
 sys-fs/gocryptfs 2.4.0: Encrypted overlay filesystem written in Go
+www-apps/gitea 1.20.2: A painless self-hosted Git service

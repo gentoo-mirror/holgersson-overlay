@@ -14,3 +14,4 @@ net-misc/fb-client:clipboard - Support writing to X clipboard via x11-misc/xclip
 sys-apps/pacman:doc - Install extended documentation using app-doc/doxygen. (Man pages are included by default.)
 sys-apps/pacman:gpg - Enable GPG signature verification using app-crypt/gpgme
 sys-fs/gocryptfs:man - Build and install man pages
+www-apps/gitea:acct - User and group management via acct-*/git packages
