@@ -24,7 +24,7 @@ dev-python/miflora 0.7.2-r2: Library to read data from Mi Flora sensor
 dev-python/multi_key_dict 2.0.3-r3: Multi key dictionary implementation
 dev-python/soundfile 0.12.1: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
 games-puzzle/osmos 1.6.1-r4: Play as a single-celled organism absorbing others
-media-fonts/sans-bullshit-sans 0.1-r2: A media-fonts/droid based font with buzzword censorship
+media-fonts/sans-bullshit-sans 0.1-r3: A media-fonts/droid based font with buzzword censorship
 media-gfx/catimg 2.7.0: Terminal image renderer, C/binary version
 net-im/dendrite 0.13.1_p20230803: Matrix homeserver written in go
 net-im/gomuks 0.3.0_p20230710: A terminal based Matrix client written in Go
