@@ -31,9 +31,9 @@ net-im/gomuks 0.3.0_p20230710: A terminal based Matrix client written in Go
 net-im/toot 0.38.1: CLI/TUI mastodon client written in python
 net-mail/urlscan 1.0.0: Mutt and terminal url selector (similar to urlview)
 net-misc/fb-client 2.3.0-r1 9999: Client for paste.xinu.at
-net-misc/q 0.11.4: DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH
+net-misc/q 0.11.4_p20230816: DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH
 net-misc/ssh-tools 1.7: Bash scripts to make ssh more convenient
 sys-apps/pacman 6.0.2: Archlinux's binary package manager
 sys-apps/pacman-mirrorlist 20221204: Repository list for Archlinux's binary package manager
 sys-fs/gocryptfs 2.4.0: Encrypted overlay filesystem written in Go
-www-apps/gitea 1.20.2: A painless self-hosted Git service
+www-apps/gitea 1.20.3: A painless self-hosted Git service
