@@ -26,7 +26,7 @@ dev-python/soundfile 0.12.1: SoundFile is an audio library based on libsndfile, 
 games-puzzle/osmos 1.6.1-r4: Play as a single-celled organism absorbing others
 media-fonts/sans-bullshit-sans 0.1-r3: A media-fonts/droid based font with buzzword censorship
 media-gfx/catimg 2.7.0: Terminal image renderer, C/binary version
-net-im/dendrite 0.13.1_p20230815: Matrix homeserver written in go
+net-im/dendrite 0.13.2: Matrix homeserver written in go
 net-im/gomuks 0.3.0_p20230710: A terminal based Matrix client written in Go
 net-im/toot 0.38.1: CLI/TUI mastodon client written in python
 net-mail/urlscan 1.0.0: Mutt and terminal url selector (similar to urlview)
