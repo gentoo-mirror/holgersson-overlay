@@ -5,5 +5,5 @@ HOMEPAGE=https://archlinux.org/mirrorlist/ https://archlinux.org/packages/core/a
 KEYWORDS=~amd64
 LICENSE=GPL-2
 SLOT=0
-SRC_URI=https://raw.githubusercontent.com/archlinux/svntogit-packages/50498e5daf725f61c2142fe1f6559074aae22037/trunk/mirrorlist -> pacman-mirrorlist-20221204
-_md5_=5fb86cbfb381745163c605c2544a9bf0
+SRC_URI=https://gitlab.archlinux.org/archlinux/packaging/packages/pacman-mirrorlist/-/raw/6e4f5b21223bd655f539d8256deed86d425d383f/mirrorlist -> pacman-mirrorlist-20230820
+_md5_=662d4e790e99df7031b025c743e4f1e7
