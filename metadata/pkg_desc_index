@@ -1,12 +1,12 @@
 acct-group/dendrite 0: Group for matrix homerserver dendrite
 acct-user/dendrite 0: User for matrix homerserver dendrite
 app-containers/dnsname 1.3.0_p20230526: Name resolution for contaienrs
-app-containers/podman-compose 1.0.6: Run docker-compose files without root with podman
-app-crypt/archlinux-keyring 20231017: GnuPG keyring of Archlinux developer keys
+app-containers/podman-compose 1.0.6-r1: Run docker-compose files without root with podman
+app-crypt/archlinux-keyring 20231207: GnuPG keyring of Archlinux developer keys
 app-crypt/sirikali 1.5.1: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
 app-emulation/nemu 3.3.0_p20231004: ncurses interface for QEMU
 app-misc/fff 2.2: Fucking Fast File-Manager (written in bash)
-dev-libs/olm 3.2.15: Implementation of the olm and megolm cryptographic ratchets
+dev-libs/olm 3.2.16: Implementation of the olm and megolm cryptographic ratchets
 dev-python/adafruit-ampy 1.1.0: Adafruit MicroPython tool
 dev-python/bluepy 1.3.0-r2: Python module for interfacing with BLE devices through Bluez
 dev-python/btlewrap 0.1.1-r2: wrapper around different bluetooth low energy backends
@@ -18,14 +18,14 @@ dev-python/soundfile 0.12.1: SoundFile is an audio library based on libsndfile, 
 games-puzzle/osmos 1.6.1-r4: Play as a single-celled organism absorbing others
 media-fonts/sans-bullshit-sans 0.1-r3: A media-fonts/droid based font with buzzword censorship
 media-gfx/catimg 2.7.0: Terminal image renderer, C/binary version
-net-im/dendrite 0.13.4_p20231109: Matrix homeserver written in go
+net-im/dendrite 0.13.5: Matrix homeserver written in go
 net-im/gomuks 0.3.0_p20230710: A terminal based Matrix client written in Go
 net-im/toot 0.38.2: CLI/TUI mastodon client written in python
 net-mail/urlscan 1.0.1: Mutt and terminal url selector (similar to urlview)
 net-misc/fb-client 2.3.0-r1 9999: Client for paste.xinu.at
-net-misc/q 0.15.1: DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH
+net-misc/q 0.19.1: DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH
 net-misc/ssh-tools 1.7: Bash scripts to make ssh more convenient
 sys-apps/pacman 6.0.2: Archlinux's binary package manager
 sys-apps/pacman-mirrorlist 20230820: Repository list for Archlinux's binary package manager
 sys-fs/gocryptfs 2.4.0: Encrypted overlay filesystem written in Go
-www-apps/gitea 1.21.1: A painless self-hosted Git service
+www-apps/gitea 1.21.2: A painless self-hosted Git service
