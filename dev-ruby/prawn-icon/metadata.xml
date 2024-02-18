@@ -6,7 +6,6 @@
 		<name>Nils Freydank</name>
 	</maintainer>
 	<upstream>
-		<remote-id type="github">firecat53/urlscan</remote-id>
-		<remote-id type="pypi">control</remote-id>
+		<remote-id type="github">jessedoyle/prawn-icon</remote-id>
 	</upstream>
 </pkgmetadata>
