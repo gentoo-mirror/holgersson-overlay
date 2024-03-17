@@ -13,16 +13,16 @@ dev-python/hdf5storage 0.1.19: Python library for using HDF5 formatted files, in
 dev-python/miflora 0.7.2-r2: Library to read data from Mi Flora sensor
 dev-python/multi_key_dict 2.0.3-r3: Multi key dictionary implementation
 dev-python/soundfile 0.12.1: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
-dev-ruby/asciidoctor-pdf 2.3.14: A native PDF converter for AsciiDoc based on Asciidoctor and Prawn
+dev-ruby/asciidoctor-pdf 2.3.15: A native PDF converter for AsciiDoc based on Asciidoctor and Prawn
 dev-ruby/prawn-icon 3.1.0: Provides support for icons in Prawn
-dev-ruby/prawn-svg 0.34.0: Provides support for SVG in Prawn
+dev-ruby/prawn-svg 0.34.2: Provides support for SVG in Prawn
 dev-ruby/prawn-templates 0.1.2-r1: Provides support for templates in Prawn
 games-puzzle/osmos 1.6.1-r4: Play as a single-celled organism absorbing others
 media-fonts/sans-bullshit-sans 0.1-r3: A media-fonts/droid based font with buzzword censorship
 media-gfx/catimg 2.7.0: Terminal image renderer, C/binary version
 net-im/dendrite 0.13.6: Matrix homeserver written in go
 net-im/gomuks 0.3.0_p20230710: A terminal based Matrix client written in Go
-net-im/toot 0.41.1: CLI/TUI mastodon client written in python
+net-im/toot 0.42.0: CLI/TUI mastodon client written in python
 net-mail/urlscan 1.0.1: Mutt and terminal url selector (similar to urlview)
 net-misc/fb-client 2.3.0-r1 9999: Client for paste.xinu.at
 net-misc/q 0.19.2: DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH
