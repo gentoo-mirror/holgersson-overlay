@@ -4,6 +4,7 @@ app-crypt/archlinux-keyring 20240313: GnuPG keyring of Archlinux developer keys
 app-crypt/sirikali 1.5.1: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
 app-emulation/nemu 3.3.1: ncurses interface for QEMU
 app-misc/fff 2.2: Fucking Fast File-Manager (written in bash)
+app-misc/zk 0.14.0: A plain text note-taking assistant
 app-text/zeal 0.7.0: Offline documentation browser inspired by Dash
 dev-libs/olm 3.2.16: Implementation of the olm and megolm cryptographic ratchets
 dev-python/adafruit-ampy 1.1.0: Adafruit MicroPython tool
