@@ -11,5 +11,5 @@ RDEPEND=media-libs/freetype:2 media-libs/libvorbis media-libs/openal virtual/glu
 RESTRICT=bindist fetch strip test
 SLOT=0
 SRC_URI=Osmos_1.6.1.tar.gz
-_eclasses_=desktop	56973babb9c5f19cab0eeb53ece644c6
+_eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed
 _md5_=b9e29b1049990e6ef7739ab5b11d345f
