@@ -12,4 +12,4 @@ RESTRICT=bindist fetch strip test
 SLOT=0
 SRC_URI=Osmos_1.6.1.tar.gz
 _eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed
-_md5_=b9e29b1049990e6ef7739ab5b11d345f
+_md5_=dae1793498708d4ec00dbe60da3cad65

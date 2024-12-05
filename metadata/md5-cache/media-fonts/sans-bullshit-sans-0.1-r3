@@ -10,4 +10,4 @@ LICENSE=Apache-2.0
 SLOT=0
 SRC_URI=https://pixelambacht.nl/downloads/SansBullshitSans.ttf -> sans-bullshit-sans-0.1.ttf
 _eclasses_=font	aa113a3df9cd0a9693a1c1ee7c34a6eb
-_md5_=ffa71798a5a08939f4d29913db7a6410
+_md5_=5203d87ebe9098f14e6e1c46ff5fa2f0
