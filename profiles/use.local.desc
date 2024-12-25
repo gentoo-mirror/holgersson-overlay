@@ -4,6 +4,7 @@
 
 app-crypt/sirikali:gnome-keyring - Enable support for storing passowrds in gnome-keyring
 app-crypt/sirikali:kwallet - Enable support for storing passwords in kwallet
+app-crypt/sirikali:pwquality - Use dev-libs/libpwquality to check against password policies
 app-emulation/nemu:network-map - Adds possibility of exporting network map to SVG
 app-emulation/nemu:ovf - Adds support for OVA/OVF import
 app-emulation/nemu:remote-control - Adds support for TLS encrypted remote access
