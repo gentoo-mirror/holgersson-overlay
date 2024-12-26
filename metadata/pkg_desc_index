@@ -23,9 +23,9 @@ media-gfx/catimg 2.7.0: Terminal image renderer, C/binary version
 net-im/toot 0.47.0: CLI/TUI mastodon client written in python
 net-mail/urlscan 1.0.6: Mutt and terminal url selector (similar to urlview)
 net-misc/fb-client 2.3.0-r2 9999: Client for paste.xinu.at
-net-misc/q 0.19.2-r1: DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH
+net-misc/q 0.19.2-r2: DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH
 net-misc/ssh-tools 1.7: Bash scripts to make ssh more convenient
 net-vpn/headscale 0.23.0: An open source, self-hosted implementation of the Tailscale control server
 sys-apps/pacman 6.1.0: Archlinux's binary package manager
 sys-apps/pacman-mirrorlist 20230820: Repository list for Archlinux's binary package manager
-sys-fs/gocryptfs 2.4.0: Encrypted overlay filesystem written in Go
+sys-fs/gocryptfs 2.4.0-r1: Encrypted overlay filesystem written in Go
