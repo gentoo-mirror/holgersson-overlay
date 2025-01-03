@@ -1,5 +1,6 @@
 app-crypt/archlinux-keyring 20240313: GnuPG keyring of Archlinux developer keys
-app-crypt/sirikali 1.7.2: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
+app-crypt/gocryptfs 2.4.0-r1: Encrypted overlay filesystem written in Go
+app-crypt/sirikali 1.8.0: A Qt/C++ GUI front end to some encrypted filesystems and sshfs
 app-emulation/nemu 3.3.1: ncurses interface for QEMU
 app-misc/fff 2.2: Fucking Fast File-Manager (written in bash)
 app-misc/zk 0.14.1-r1: A plain text note-taking assistant
@@ -12,7 +13,7 @@ dev-python/hdf5storage 0.1.19-r1: Python library for using HDF5 formatted files,
 dev-python/miflora 0.7.2-r2: Library to read data from Mi Flora sensor
 dev-python/multi_key_dict 2.0.3-r3: Multi key dictionary implementation
 dev-python/slycot 0.6.0: Python wrapper for SLICOT, used by dev-python/control
-dev-python/soundfile 0.12.1-r1: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
+dev-python/soundfile 0.13.0: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
 dev-ruby/asciidoctor-pdf 2.3.19: A native PDF converter for AsciiDoc based on Asciidoctor and Prawn
 dev-ruby/prawn-icon 4.1.0: Provides support for icons in Prawn
 dev-ruby/prawn-svg 0.35.1: Provides support for SVG in Prawn
@@ -28,4 +29,3 @@ net-misc/ssh-tools 1.7: Bash scripts to make ssh more convenient
 net-vpn/headscale 0.23.0: An open source, self-hosted implementation of the Tailscale control server
 sys-apps/pacman 6.1.0: Archlinux's binary package manager
 sys-apps/pacman-mirrorlist 20230820: Repository list for Archlinux's binary package manager
-sys-fs/gocryptfs 2.4.0-r1: Encrypted overlay filesystem written in Go
