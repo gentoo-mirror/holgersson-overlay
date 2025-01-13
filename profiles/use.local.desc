@@ -12,5 +12,3 @@ app-emulation/nemu:remote-control - Adds support for TLS encrypted remote access
 app-emulation/nemu:spice - Adds Spice protocol support
 app-emulation/nemu:vnc-client - Adds support for external VNC client
 net-misc/fb-client:clipboard - Support writing to X clipboard via x11-misc/xclip
-sys-apps/pacman:doc - Install extended documentation using app-text/doxygen. (Man pages are included by default.)
-sys-apps/pacman:gpg - Enable GPG signature verification using app-crypt/gpgme
