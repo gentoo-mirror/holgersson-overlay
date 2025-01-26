@@ -12,7 +12,7 @@ dev-python/slycot 0.6.0: Python wrapper for SLICOT, used by dev-python/control
 dev-python/soundfile 0.13.1: SoundFile is an audio library based on libsndfile, CFFI, and NumPy
 dev-ruby/asciidoctor-pdf 2.3.19: A native PDF converter for AsciiDoc based on Asciidoctor and Prawn
 dev-ruby/prawn-icon 4.1.0: Provides support for icons in Prawn
-dev-ruby/prawn-svg 0.36.0: Provides support for SVG in Prawn
+dev-ruby/prawn-svg 0.36.1: Provides support for SVG in Prawn
 dev-ruby/prawn-templates 0.1.2-r1: Provides support for templates in Prawn
 games-puzzle/osmos 1.6.1-r4: Play as a single-celled organism absorbing others
 media-fonts/sans-bullshit-sans 0.1-r3: A media-fonts/droid based font with buzzword censorship
