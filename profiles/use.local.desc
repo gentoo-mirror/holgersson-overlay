@@ -2,7 +2,6 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-app-crypt/gocryptfs:man - Build and install man pages
 app-crypt/sirikali:gnome-keyring - Enable support for storing passowrds in gnome-keyring
 app-crypt/sirikali:kwallet - Enable support for storing passwords in kwallet
 app-crypt/sirikali:pwquality - Use dev-libs/libpwquality to check against password policies
